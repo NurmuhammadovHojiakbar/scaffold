@@ -1,0 +1,36 @@
+.site-header{
+    /*SITE HEDER INFO*/
+    &__info{
+        padding: 13px 0;
+        background-color: #f1f9ff;
+    }
+
+
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__contact{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-link{
+            color: var(--blue-color);
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
