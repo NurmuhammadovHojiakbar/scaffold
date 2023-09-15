@@ -1,8 +1,27 @@
 .site-header{
-    /*SITE HEDER INFO*/
+    /*SITE HEADER INFO*/
     &__info{
         padding: 13px 0;
         background-color: #f1f9ff;
+    }
+
+    /*SITE HEADER NAVIGATION*/
+
+    &__nav{
+        position: relative;
+        background-color: var(--blue-color);
+        padding: 20px 0;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: -25px;
+            bottom: 0;
+            width: calc(35% + 25px);
+            height: 120px;
+            background-color: #fff;
+            transform: skew(15deg);
+        }
     }
 
 
@@ -121,6 +140,88 @@
 
             &:hover{
                 color: var(--orange-color);
+            }
+        }
+    }
+}
+
+.site-nav{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transform: translateX(calc(-50% + 35px));
+    }
+
+    &__link{
+        color: #fff;
+        transition: 0.3s ease;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+
+        &:hover{
+            color: var(--orange-color);
+        }
+    }
+
+    &__contact-link{
+        color: #fff;
+        padding: 12px 30px;
+        transition: 0.3s ease;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+
+        &:hover{
+            background-color: var(--orange-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .site-header{
+        &__nav{
+            &::before{
+                width: calc(32% + 25px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .site-header{
+        &__nav{
+            &::before{
+                width: calc(30% + 25px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .site-header{
+        &__nav{
+            &::before{
+                width: calc(28% + 25px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .site-header{
+        &__nav{
+            &::before{
+                width: calc(25% + 25px);
+                height: 100%;
             }
         }
     }

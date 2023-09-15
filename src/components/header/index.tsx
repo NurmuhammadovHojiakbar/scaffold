@@ -1,12 +1,14 @@
 import HeaderInfo from "./header-info";
-import "./header.scss"
+import Navigation from "./navigation";
+import "./header.scss";
 
 const Header = () => {
-    return (
-        <header className="site-header">
-            <HeaderInfo />
-        </header>
-    );
-}
- 
+  return (
+    <header className="site-header">
+      <HeaderInfo />
+      <Navigation />
+    </header>
+  );
+};
+
 export default Header;
