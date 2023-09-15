@@ -172,6 +172,10 @@
         }
     }
 
+    &__link.active{
+        color: var(--orange-color);
+    }
+
     &__contact-link{
         color: #fff;
         padding: 12px 30px;
@@ -217,12 +221,29 @@
 }
 
 @media only screen and (max-width: 1300px) {
+    .header-info{
+        &__contact{
+            margin-left: unset;
+        }
+    }
+
     .site-header{
         &__nav{
             &::before{
-                width: calc(25% + 25px);
+                width: 250px;
                 height: 100%;
             }
+        }
+    }
+
+    .site-nav{
+        &__logo-img{
+            width: 170px;
+            height: 40px;
+        }
+
+        &__list{
+            transform: none;
         }
     }
 }
@@ -230,8 +251,6 @@
 @media only screen and (max-width: 600px) {
     .header-info{
         &__contact{
-            margin-left: unset;
-            
             &-email{
                 display: none;
             }

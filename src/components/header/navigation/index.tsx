@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import LogoImg from "@/assets/images/logo.png";
 
 const Navigation = () => {
+  const { pathname } = useLocation();
   const navList = [
     {
       id: 1,
@@ -33,13 +34,24 @@ const Navigation = () => {
     <nav className="site-header__nav">
       <div className="container site-nav">
         <Link className="site-nav__logo" to="/">
-          <img src={LogoImg} alt="Logo" width={252} height={60} />
+          <img
+            className="site-nav__logo-img"
+            src={LogoImg}
+            alt="Logo"
+            width={252}
+            height={60}
+          />
         </Link>
 
         <ul className="site-nav__list">
           {navList.map((nav) => (
             <li className="site-nav__item" key={nav.id}>
-              <Link className="site-nav__link" to={nav.path}>
+              <Link
+                className={`site-nav__link ${
+                  pathname === nav.path ? "active" : ""
+                }`}
+                to={nav.path}
+              >
                 {nav.name}
               </Link>
             </li>
