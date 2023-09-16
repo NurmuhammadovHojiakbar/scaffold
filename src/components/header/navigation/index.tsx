@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LogoImg from "@/assets/images/logo.png";
+import { HumOpenIcon } from "@/components/icons";
+import MobileNavigation from "../mobile-navigation";
 
 const Navigation = () => {
+  const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const navList = [
     {
@@ -30,6 +34,7 @@ const Navigation = () => {
       name: "Blog",
     },
   ];
+
   return (
     <nav className="site-header__nav">
       <div className="container site-nav">
@@ -60,7 +65,13 @@ const Navigation = () => {
         <Link className="site-nav__contact-link" to="/contact">
           Get A Quote
         </Link>
+        <button className="site-nav__hum" onClick={() => setOpen(true)}>
+          <HumOpenIcon className="site-nav__hum-icon" />
+        </button>
       </div>
+      {open && (
+        <MobileNavigation navList={navList} open={open} setOpen={setOpen} />
+      )}
     </nav>
   );
 };

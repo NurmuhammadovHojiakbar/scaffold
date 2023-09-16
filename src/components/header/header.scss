@@ -10,6 +10,7 @@
     &__nav{
         position: relative;
         background-color: var(--blue-color);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
         padding: 20px 0;
 
         &::before{
@@ -188,6 +189,90 @@
             background-color: var(--orange-color);
         }
     }
+
+    &__hum{
+        display: none;
+        width: 50px;
+        height: 50px;
+        background-color: var(--orange-color);
+        color: #fff;
+        border: none;
+        outline: none;
+
+        &-icon{
+            width: 30px;
+            height: 35px;
+        }
+    }
+}
+
+.mobile{
+    &-wrapper{
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow-x: hidden;
+        z-index: 99;
+    }
+
+    &-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 300px;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px 25px;
+        transition: right 0.3s ease;
+
+        &__hum{
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin-bottom: 20px;
+
+            &-icon{
+                display: block;
+                width: 20px;
+            }
+        }
+
+        &__logo{
+            margin-bottom: 25px;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            margin-bottom: 25px;
+        }
+
+        &__item{
+            &:not(:last-of-type){
+                border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            }
+        }
+        
+        &__link{
+            display: block;
+            padding: 10px 0;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--blue-color);
+            transition: 0.3s ease;
+
+            &:hover{
+                color: var(--orange-color);
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1800px) {
@@ -245,6 +330,50 @@
         &__list{
             transform: none;
         }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .site-header{
+        &__nav{
+            background-color: #fff;
+
+            &::before{
+                display: none;
+            }
+        }
+    }
+
+    .site-nav{
+        &__list{
+            display: none;
+        }
+
+        &__contact-link{
+            display: none;
+        }
+
+        &__hum{
+            display: block;
+        }
+    }
+
+    .mobile{
+        &-wrapper.active{
+            display: block;
+        }
+        
+        &-nav.active{
+            animation: slide-nav 0.5s ease;
+        }
+    }
+}
+
+@keyframes slide-nav {
+    0%{
+        right: -100%;
+    }100%{
+        right: 0;
     }
 }
 
