@@ -1,0 +1,15 @@
+.footer-copyright{
+    background-color: var(--darker-blue-color);
+    color: #fff;
+
+    &__container{
+        padding: 20px 0;
+    }
+
+    &__text{
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
