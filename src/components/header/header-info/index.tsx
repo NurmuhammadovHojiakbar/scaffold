@@ -1,47 +1,15 @@
-import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import {
-  MailIcon,
-  PhoneIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  YoutubeIcon,
-  FacebookIcon,
-  InstagramIcon,
-  ArrowToBottomIcon,
-} from "../../icons";
+import { ArrowToBottomIcon, MailIcon, PhoneIcon } from "../../icons";
 
-const HeaderInfo = () => {
-  const socialList = useMemo(
-    () => [
-      {
-        id: 1,
-        path: "",
-        icon: <TwitterIcon />,
-      },
-      {
-        id: 2,
-        path: "",
-        icon: <LinkedinIcon />,
-      },
-      {
-        id: 3,
-        path: "",
-        icon: <YoutubeIcon />,
-      },
-      {
-        id: 4,
-        path: "",
-        icon: <FacebookIcon />,
-      },
-      {
-        id: 5,
-        path: "",
-        icon: <InstagramIcon />,
-      },
-    ],
-    []
-  );
+type PropType = {
+  socialList: {
+    id: number;
+    path: string;
+    icon: JSX.Element;
+  }[];
+};
+
+const HeaderInfo = ({ socialList }: PropType) => {
   return (
     <div className="site-header__info">
       <div className="container header-info">

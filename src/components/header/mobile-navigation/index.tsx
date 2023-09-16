@@ -10,9 +10,14 @@ type PropType = {
   }[];
   open: boolean;
   setOpen: (el: boolean) => void;
+  socialList: {
+    id: number;
+    path: string;
+    icon: JSX.Element;
+  }[];
 };
 
-const MobileNavigation = ({ navList, setOpen, open }: PropType) => {
+const MobileNavigation = ({ socialList, navList, setOpen, open }: PropType) => {
   return (
     <div className={`mobile-wrapper ${open ? "active" : ""}`}>
       <nav className={`mobile-nav ${open ? "active" : ""}`}>
@@ -28,7 +33,6 @@ const MobileNavigation = ({ navList, setOpen, open }: PropType) => {
             height={45}
           />
         </Link>
-
         <ul className="mobile-nav__list">
           {navList.map((nav) => (
             <li className="mobile-nav__item" key={nav.id}>
@@ -38,7 +42,6 @@ const MobileNavigation = ({ navList, setOpen, open }: PropType) => {
             </li>
           ))}
         </ul>
-
         <div className="mobile-nav__info">
           <h2 className="mobile-nav__info-title">Contact Info</h2>
           <p className="mobile-nav__info-link mobile-nav__info-location">
@@ -60,10 +63,19 @@ const MobileNavigation = ({ navList, setOpen, open }: PropType) => {
             <span>+876 864 764 764</span>
           </Link>
         </div>
-
         <Link className="mobile-nav__contact-link" to="/contact">
           Get A Quote
         </Link>
+
+        <ul className="mobile-nav__socials-list">
+          {socialList.map((social) => (
+            <li className="mobile-nav__socials-item" key={social.id}>
+              <Link className="mobile-nav__socials-link" to={social.path}>
+                {social.icon}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );

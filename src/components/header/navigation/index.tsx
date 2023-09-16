@@ -4,7 +4,15 @@ import LogoImg from "@/assets/images/logo.png";
 import { HumOpenIcon } from "@/components/icons";
 import MobileNavigation from "../mobile-navigation";
 
-const Navigation = () => {
+type PropType = {
+  socialList: {
+    id: number;
+    path: string;
+    icon: JSX.Element;
+  }[];
+};
+
+const Navigation = ({ socialList }: PropType) => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const navList = [
@@ -70,7 +78,12 @@ const Navigation = () => {
         </button>
       </div>
       {open && (
-        <MobileNavigation navList={navList} open={open} setOpen={setOpen} />
+        <MobileNavigation
+          socialList={socialList}
+          navList={navList}
+          open={open}
+          setOpen={setOpen}
+        />
       )}
     </nav>
   );

@@ -283,6 +283,7 @@
             background-color: var(--orange-color);
             align-self: stretch;
             text-align: center;
+            margin-bottom: 25px;
 
             &:hover{
                 background-color: var(--blue-color);
@@ -321,6 +322,32 @@
                 color: var(--orange-color);
                 width: 15px;
                 margin-right: 5px;
+            }
+        }
+
+        &__socials{
+            &-list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+                gap: 5px;
+            }
+
+            &-link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 5px;
+                background-color: var(--dark-blue-color);
+                color: #fff;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: var(--orange-color);
+                }
             }
         }
     }
