@@ -272,6 +272,57 @@
                 color: var(--orange-color);
             }
         }
+
+        &__contact-link{
+            color: #fff;
+            padding: 12px 30px;
+            transition: 0.3s ease;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: var(--orange-color);
+            align-self: stretch;
+            text-align: center;
+
+            &:hover{
+                background-color: var(--blue-color);
+            }
+        }
+
+        &__info{
+            margin-bottom: 25px;
+
+            &-title{
+                font-size: 27px;
+                font-weight:   bold;
+                margin-top: 0;
+                margin-bottom: 20px;
+                color: var(--blue-color);
+            }
+
+            &-link{
+                display: flex;
+                align-items: center;
+                color: var(--blue-color);
+                font-size: 15px;
+                transition: 0.3s ease;
+            }
+
+            &-location{
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+            &-email{
+                margin-bottom: 15px;
+            }
+
+            &-icon{
+                color: var(--orange-color);
+                width: 15px;
+                margin-right: 5px;
+            }
+        }
     }
 }
 

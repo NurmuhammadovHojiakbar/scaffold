@@ -1,5 +1,5 @@
-import { HumCloseIcon } from "@/components/icons";
 import { Link } from "react-router-dom";
+import { HumCloseIcon, MailIcon, MapIcon, PhoneIcon } from "@/components/icons";
 import LogoImg from "@/assets/images/logo.png";
 
 type PropType = {
@@ -38,6 +38,32 @@ const MobileNavigation = ({ navList, setOpen, open }: PropType) => {
             </li>
           ))}
         </ul>
+
+        <div className="mobile-nav__info">
+          <h2 className="mobile-nav__info-title">Contact Info</h2>
+          <p className="mobile-nav__info-link mobile-nav__info-location">
+            <MapIcon className="mobile-nav__info-icon" />
+            <span>12/A, Mirnada City Tower, NYC</span>
+          </p>
+          <Link
+            className="mobile-nav__info-link mobile-nav__info-email"
+            to="mailto:info@webmail.com"
+          >
+            <MailIcon className="mobile-nav__info-icon" />
+            <span>info@webmail.com</span>
+          </Link>
+          <Link
+            className="mobile-nav__info-link mobile-nav__info-tel"
+            to="tel:+876864764764"
+          >
+            <PhoneIcon className="mobile-nav__info-icon" />
+            <span>+876 864 764 764</span>
+          </Link>
+        </div>
+
+        <Link className="mobile-nav__contact-link" to="/contact">
+          Get A Quote
+        </Link>
       </nav>
     </div>
   );
