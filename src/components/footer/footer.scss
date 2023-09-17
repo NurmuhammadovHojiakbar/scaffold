@@ -1,3 +1,104 @@
+.footer-top{
+    padding: 80px 0;
+    background-color: var(--bold-blue-color);
+
+    &__container{
+        display: flex;
+        gap: 15px;
+
+        &-child{
+            flex-basis: calc(25% - 15px);
+        }
+    }
+
+    &__title{
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    &__context{
+        color: var(--context-color);
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 0;
+    }
+
+    &__info{
+        &-about{
+            margin-bottom: 16px;
+        }
+    }
+
+    &__opening{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        &-title{
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        &-time{
+            margin-bottom: 0;
+        }
+    }
+
+    &__services{
+        &-item{
+            margin-bottom: 18px;
+        }
+
+        &-link{
+            transition: 0.3s ease;
+
+            &:hover{
+                color: var(--orange-color);
+            }
+        }
+    }
+
+    &__blog{
+        &-item{
+            margin-bottom: 15px;
+        }
+
+        &-link{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &-time{
+            color: var(--context-color);
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        &-icon{
+            width: 15px;
+            color: var(--orange-color);
+            margin-right: 5px;
+        }
+
+        &-detail-title{
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+            transition: 0.3s ease;
+
+            &:hover{
+                color: var(--orange-color);
+            }
+        }
+    }
+}
+
 .footer-copyright{
     background-color: var(--darker-blue-color);
     color: #fff;
@@ -11,5 +112,39 @@
         text-align: center;
         font-size: 16px;
         font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .footer-top{
+        &__container{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-child{
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-top{
+        &__container{
+            gap: 25px;
+
+            &-child{
+                flex-basis: 100%;
+            }
+        }
+
+        &__footprints{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
     }
 }
