@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import LogoImg from "@/assets/images/logo.png";
 import { HumOpenIcon } from "@/components/icons";
 import MobileNavigation from "../mobile-navigation";
+import useWindowScroll from "@/hooks/use-window-scroll";
 
 type PropType = {
   socialList: {
@@ -15,6 +16,7 @@ type PropType = {
 const Navigation = ({ socialList }: PropType) => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { scrollY } = useWindowScroll();
   const navList = [
     {
       id: 1,
@@ -44,7 +46,7 @@ const Navigation = ({ socialList }: PropType) => {
   ];
 
   return (
-    <nav className="site-header__nav">
+    <nav className={`site-header__nav ${scrollY > 200 ? "active" : ""}`}>
       <div className="container site-nav">
         <Link className="site-nav__logo" to="/">
           <img

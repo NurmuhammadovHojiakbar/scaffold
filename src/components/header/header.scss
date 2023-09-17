@@ -23,6 +23,39 @@
             background-color: #fff;
             transform: skew(15deg);
         }
+
+        &.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            animation: slide-nav-bottom 0.7s ease;
+    
+            &::before{
+                display: none;
+            }
+
+            .site-nav__link{
+                color: var(--blue-color);
+
+                &:hover{
+                    color: var(--orange-color);
+                }
+            }
+            
+            .site-nav__link.active{
+                color: var(--orange-color);
+            }
+
+            .site-nav__contact-link{
+                background-color: var(--blue-color);
+
+                &:hover{
+                    background-color: var(--orange-color);
+                }
+            }
+        }
     }
 
 
@@ -452,6 +485,14 @@
         right: -100%;
     }100%{
         right: 0;
+    }
+}
+
+@keyframes slide-nav-bottom {
+    0%{
+        top: -100%;
+    }100%{
+        top: 0;
     }
 }
 
