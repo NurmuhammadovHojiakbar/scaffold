@@ -18,7 +18,7 @@ const ContainerHeader = ({ title, links }: PropType) => {
         <div className="container-header__links">
           <ul className="container-header__list">
             {links.map((link) => (
-              <li className="container-header__item">
+              <li className="container-header__item" key={link.id}>
                 {link.path ? (
                   <Link className="container-header__link" to={link.path}>
                     {link.title}

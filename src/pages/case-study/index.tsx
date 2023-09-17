@@ -8,7 +8,7 @@ const CaseStudy = () => {
       title: "Home",
     },
     {
-      id: 1,
+      id: 2,
       title: "Case Study",
     },
   ];

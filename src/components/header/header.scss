@@ -30,7 +30,7 @@
             left: 0;
             width: 100%;
             background-color: #fff;
-            animation: slide-nav-bottom 0.7s ease;
+            animation: slide-nav-bottom 1s ease-out;
     
             &::before{
                 display: none;
@@ -490,7 +490,7 @@
 
 @keyframes slide-nav-bottom {
     0%{
-        top: -100%;
+        top: -50%;
     }100%{
         top: 0;
     }

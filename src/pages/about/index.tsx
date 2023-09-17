@@ -8,7 +8,7 @@ const About = () => {
       title: "Home",
     },
     {
-      id: 1,
+      id: 2,
       title: "About",
     },
   ];
