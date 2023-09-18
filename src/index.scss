@@ -55,6 +55,7 @@
 :root {
     --main-font-family: "Roboto", "Arial", sans-serif;
     --blue-color: #00235a;
+    --light-blue-color: #c0d9ff;
     --dark-blue-color: #393f53;
     --darker-blue-color: #00122f;
     --bold-blue-color: #001940;
@@ -112,7 +113,21 @@ input::-webkit-inner-spin-button {
   margin-right: auto;
 }
 
-.title {
+.title-sm {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--orange-color);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.title-lg {
+  font-size: 60px;
+  line-height: 70px;
+  color: var(--blue-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .visually-hidden {

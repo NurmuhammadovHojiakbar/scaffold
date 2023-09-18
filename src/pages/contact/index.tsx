@@ -1,3 +1,4 @@
+import { ContactInfo, ContactTouch } from "@/components/contact";
 import Container from "@/layout/container";
 
 const Contact = () => {
@@ -14,7 +15,8 @@ const Contact = () => {
   ];
   return (
     <Container title="Contact" linksList={links} headerTitle="Contact">
-      Contact page
+      <ContactInfo />
+      <ContactTouch />
     </Container>
   );
 };
