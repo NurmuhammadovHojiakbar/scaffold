@@ -1,0 +1,136 @@
+.info{
+    display: flex;
+
+    &.reverse{
+        flex-direction: row-reverse;
+    }
+
+    &-img{
+        min-height: 500px;
+        flex-basis: 50%;
+        background: url("../../assets/images/workers.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &-wrapper{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    &-item{
+        flex-grow: 1;
+        
+        &__wrapper{
+            padding: 100px 60px;
+            background-color: var(--blue-color);
+        }
+
+        &__img{
+            margin-bottom: 35px;
+        }
+
+        &__title{
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: bold;
+            margin-top: 0;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &__text{
+            font-size: 16px;
+            line-height: 29px;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        &__link{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            color: #fff;
+            transition: 0.3s ease;
+            font-weight: 700;
+
+            &:hover{
+                background-color: #fff;
+                color: var(--blue-color);
+            }
+        }
+    }
+
+    &-item.white{
+        
+        .info-item__wrapper{
+            background: var(--orange-color) url("../../assets/images/white-bg.png") no-repeat center;
+            background-size: cover;
+        }
+
+        .info-item__title, .info-item__text{
+            color: var(--blue-color);
+        }
+
+        .info-item__link{
+            background-color: #fff;
+            color: var(--blue-color);
+
+            &:hover{
+                background-color: var(--orange-color);
+                color: #fff;
+            }
+        }
+    }
+
+    &-item.orange{
+        background: var(--orange-color) url("../../assets/images/building-item-bg.jpg") no-repeat center;
+        background-size: cover;
+
+        .info-item__wrapper{
+            background-color: var(--light-orange-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .info{
+        &-img{
+            flex-basis: 40%;
+        }
+
+        &-wrapper{
+            flex-basis: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .info{
+        flex-direction: column;
+
+        &.reverse{
+            flex-direction: column;
+        }
+
+        &-img{
+            flex-basis: 100%;
+        }
+
+        &-wrapper{
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .info{
+        &-wrapper{
+            flex-direction: column;
+        }
+    }
+}

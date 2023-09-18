@@ -4,12 +4,13 @@ import Contact from "./pages/contact";
 import CaseStudy from "./pages/case-study";
 import Blog from "./pages/blog";
 import Services from "./pages/services";
+import Home from "./pages/home";
 
 const Router = () => {
   return useRoutes([
     {
       path: "/",
-      element: <h1>Home page</h1>,
+      element: <Home />,
     },
     {
       path: "/about",
