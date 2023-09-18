@@ -50,7 +50,7 @@ const ContactTouch = () => {
             />
             <MessageIcon />
           </label>
-          <button className="contact-touch__form-btn" type="submit">
+          <button className="btn" type="submit">
             Send Message
           </button>
         </form>

@@ -18,9 +18,11 @@
     }
 
     &-item{
+        display: flex;
         flex-grow: 1;
         
         &__wrapper{
+            flex-grow: 1;
             padding: 100px 60px;
             background-color: var(--blue-color);
         }

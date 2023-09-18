@@ -114,6 +114,10 @@ input::-webkit-inner-spin-button {
   margin-right: auto;
 }
 
+.container-sm{
+  max-width: 1170px;
+}
+
 .title-sm {
   font-size: 16px;
   font-weight: bold;
@@ -139,4 +143,21 @@ input::-webkit-inner-spin-button {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.btn{
+  align-self: center;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: var(--orange-color);
+  transition: 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:hover{
+      background-color: var(--blue-color);
+  }
 }

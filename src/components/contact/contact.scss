@@ -124,23 +124,6 @@
             width: 100%;
             resize: none;
         }
-
-        &-btn{
-            align-self: center;
-            padding: 20px 50px;
-            text-transform: uppercase;
-            color: #fff;
-            border: none;
-            outline: none;
-            background-color: var(--orange-color);
-            transition: 0.3s ease;
-            font-size: 14px;
-            font-weight: bold;
-
-            &:hover{
-                background-color: var(--blue-color);
-            }
-        }
     }
 }
 

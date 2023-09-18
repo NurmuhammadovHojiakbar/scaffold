@@ -1,0 +1,25 @@
+.features{
+    position: relative;
+    padding: 120px 0;
+    background: url("../../assets/images/feature-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    &-title{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%,-25px);
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-size: 240px;
+        line-height: 1;
+    }
+
+    &-container{
+        position: relative;
+        z-index: 1;
+    }
+}
