@@ -1,0 +1,122 @@
+.about-services{
+    position: relative;
+    padding: 90px 0;
+
+    &__title{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%,-25px);
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(204, 204, 204, 0.4);
+        font-size: 240px;
+        line-height: 1;
+    }
+
+    &__container{
+        &-title{
+            text-align: center;
+        }
+        
+        &-heading{
+            text-align: center;
+        }
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &__item{
+        flex-grow: 1;
+        flex-basis: calc(33% - 12px);
+        padding: 55px 50px;
+        border: 2px solid #fafafa;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 0;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--orange-color);
+            transition: 0.3s;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
+
+        &-img{
+            margin-bottom: 30px;
+        }
+
+        &-title{
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 19px;
+            text-transform: uppercase;
+            color: var(--blue-color);
+            font-weight: 700;
+        }
+
+        &-text{
+            margin: 0;
+            font-size: 16px;
+            line-height: 29px;
+            font-weight: normal;
+            color: var(--blue-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .about-services{
+        &__title{
+            font-size: 180px;
+            transform: translate(-50%,-18px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-services{
+        &__list{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about-services{
+        &__title{
+            font-size: 100px;
+            transform: translate(-50%,-10px);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .about-services{
+        &__list{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-services{
+        &__title{
+            font-size: 60px;
+            transform: translate(-50%,-6px);
+        }
+    }
+}

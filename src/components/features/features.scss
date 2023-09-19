@@ -140,7 +140,8 @@
 @media only screen and (max-width: 500px) {
     .features{
         &-title{
-            display: none;
+            font-size: 60px;
+            transform: translate(-50%,-6px);
         }
 
         &-wrapper{
