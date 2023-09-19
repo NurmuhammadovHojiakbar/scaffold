@@ -12,7 +12,6 @@
         background-color: var(--blue-color);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
         padding: 20px 0;
-        z-index: 99;
 
         &::before{
             content: "";
@@ -32,6 +31,8 @@
             width: 100%;
             background-color: #fff;
             animation: slide-nav-bottom 1s ease-out;
+            z-index: 99;
+
     
             &::before{
                 display: none;
