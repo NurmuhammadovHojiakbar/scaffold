@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./features.scss";
 
 const Features = () => {
@@ -37,7 +38,9 @@ const Features = () => {
             ))}
           </ul>
 
-          <button className="btn">Read More</button>
+          <Link className="btn" to="/about">
+            Read More
+          </Link>
         </div>
       </div>
     </section>

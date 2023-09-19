@@ -1,3 +1,4 @@
+import Features from "@/components/features";
 import Container from "@/layout/container";
 
 const Services = () => {
@@ -14,7 +15,7 @@ const Services = () => {
   ];
   return (
     <Container title="Services" linksList={links} headerTitle="Services">
-      Services page
+      <Features />
     </Container>
   );
 };

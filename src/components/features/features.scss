@@ -22,4 +22,125 @@
         position: relative;
         z-index: 1;
     }
+
+    &-wrapper{
+        max-width: 570px;
+        width: 100%;
+
+        &__title{
+            margin-bottom: 14px;
+        }
+
+        .btn{
+            display: inline-block;
+        }
+    }
+
+    &-list{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    &-item{
+        display: flex;
+        align-items: flex-start;
+        gap: 35px;
+
+        &__img{
+            width: 90px;
+            height: 90px;
+            -webkit-box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.1);
+            box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.1);
+            background: url("../../assets/images/feature-item-bg.png") no-repeat center;
+            background-size: contain;
+            border-radius: 100%;
+            flex-shrink: 0;
+        }
+
+        &__title{
+            margin-top: 0;
+            margin-bottom: 11px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: var(--blue-color);
+        }
+
+        &__text{
+            margin: 0;
+            color: var(--blue-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .features{
+        &-title{
+            font-size: 180px;
+            transform: translate(-50%,-20px);
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .features{
+        &-title{
+            font-size: 150px;
+            transform: translate(-50%,-15px);
+        }
+
+        &-wrapper{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .features{
+        &-title{
+            font-size: 100px;
+            transform: translate(-50%,-10px);
+        }
+
+        &-wrapper{
+            &__heading.title-lg{
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .features{
+        &-title{
+            display: none;
+        }
+
+        &-wrapper{
+            &__heading.title-lg{
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+
+        &-item{
+            gap: 20px;
+
+            &__img{
+                width: 50px;
+                height: 50px;
+            }
+
+            &__title{
+                font-size: 20px;
+            }
+
+            &__text{
+                font-size: 14px;
+            }
+        }
+    }
 }
