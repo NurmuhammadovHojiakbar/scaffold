@@ -49,6 +49,7 @@
         gap: 35px;
 
         &__img{
+            position: relative;
             width: 90px;
             height: 90px;
             -webkit-box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.1);
@@ -57,6 +58,29 @@
             background-size: contain;
             border-radius: 100%;
             flex-shrink: 0;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            
+            &.beam::before{
+                width: 50px;
+                height: 50px;
+                background: url("../../assets/images/beam.png") no-repeat center;
+                background-size: contain;
+            }
+            
+            &.hammer::before{
+                width: 35px;
+                height: 35px;
+                background: url("../../assets/images/hammer.png") no-repeat center;
+                background-size: contain;
+            }
+
         }
 
         &__title{
