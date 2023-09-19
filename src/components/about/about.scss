@@ -118,5 +118,12 @@
             font-size: 60px;
             transform: translate(-50%,-6px);
         }
+
+        &__container{
+            &-heading.title-lg{
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
     }
 }
