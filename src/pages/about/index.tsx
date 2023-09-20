@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import Info from "@/components/info";
 import Contract from "@/components/contracts";
-import { AboutServices } from "@/components/about";
+import { AboutInfo, AboutServices } from "@/components/about";
 import Container from "@/layout/container";
 import Sponsor1 from "@/assets/images/sponsor-1.png";
 import Sponsor2 from "@/assets/images/sponsor-2.png";
@@ -59,6 +59,7 @@ const About = () => {
   ];
   return (
     <Container title="About" linksList={links} headerTitle="About">
+      <AboutInfo />
       <Info itemClass="white" wrapperClass="reverse" />
       <AboutServices />
       <Contract sliders={sponsors} />
