@@ -79,7 +79,7 @@
 
 .about-info{
     padding: 120px 0;
-    background: url("../../assets/images/building-sketch-bg.png") no-repeat center;
+    background: url("../../assets/images/building-sketch-bg.png") no-repeat center 0%;
     background-size: cover;
 
     &__container{
@@ -175,12 +175,47 @@
             transform: translate(-50%,-18px);
         }
     }
+
+    .about-info{
+        &__wrapper{
+            &-worker-img{
+                left: 12%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
     .about-services{
         &__list{
             flex-wrap: wrap;
+        }
+    }
+
+    .about-info{
+        &__wrapper{
+            &-worker-img{
+                left: 12%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about-info{
+        &__container{
+            flex-direction: column;
+        }
+
+        &__wrapper{
+            max-width: 100%;
+            &-worker-img{
+                left: 25%;
+            }
+        }
+
+        &__details{
+            max-width: 100%;
         }
     }
 }
@@ -203,6 +238,32 @@
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .about-info{
+        &__wrapper{
+            padding-bottom: 0;
+            
+            
+            &-img{
+                width: 100%;
+            }
+
+            &-worker-img{
+                display: none;
+            }
+        }
+
+        &__details{
+            max-width: 100%;
+
+            &-heading.title-lg{
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .about-services{
         &__title{
@@ -214,6 +275,22 @@
             &-heading.title-lg{
                 font-size: 40px;
                 line-height: 48px;
+            }
+        }
+    }
+
+    .about-info{
+
+        &__experience{
+            padding: 30px 20px;
+
+            &-year{
+                font-size: 55px;
+                margin-right: 20px;
+            }
+
+            &-title-lg{
+                font-size: 32px;
             }
         }
     }
