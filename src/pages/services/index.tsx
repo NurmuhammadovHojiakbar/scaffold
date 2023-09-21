@@ -10,6 +10,7 @@ import Sponsor5 from "@/assets/images/sponsor-5.png";
 import Sponsor6 from "@/assets/images/sponsor-6.png";
 import Sponsor7 from "@/assets/images/sponsor-7.png";
 import { PricePlans } from "@/components/services";
+import Counter from "@/components/counter";
 
 const Services = () => {
   const sponsors = useMemo(
@@ -59,6 +60,14 @@ const Services = () => {
   return (
     <Container title="Services" linksList={links} headerTitle="Services">
       <PricePlans />
+      <Counter
+        trackColor="#314d79"
+        color="#ff5e14"
+        textColor="#fff"
+        bgColor="#00235a"
+        detailsColor="#fff"
+        titleColor="#0B316C"
+      />
       <Features />
       <Contract sliders={sponsors} />
     </Container>

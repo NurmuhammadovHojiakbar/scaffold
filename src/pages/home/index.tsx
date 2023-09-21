@@ -10,6 +10,7 @@ import TerrenoImg from "@/assets/images/terreno.png";
 import TurbologoImg from "@/assets/images/turbologo.png";
 import HeartCareImg from "@/assets/images/heartcare.png";
 import SafeImg from "@/assets/images/safeguard.png";
+import Counter from "@/components/counter";
 
 const Home = () => {
   const contractList = useMemo(
@@ -51,6 +52,16 @@ const Home = () => {
       <Features />
       <Contract color="white" sliders={contractList} />
       <Info />
+      <Counter
+        title="Counter"
+        heading={`Get Amazing Puried <br /> With Us.`}
+        trackColor="#314d79"
+        color="#ff5e14"
+        textColor="#ff5e14"
+        bgColor="#fff"
+        detailsColor="#00235a"
+        titleColor="#f4f4f4"
+      />
     </Page>
   );
 };

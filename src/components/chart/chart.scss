@@ -1,0 +1,17 @@
+.chart{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    svg:not(:root) {
+        overflow-clip-margin: content-box !important;
+        overflow: hidden !important;
+    }
+
+    svg {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+}

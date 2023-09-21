@@ -107,6 +107,17 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+svg:not(:root) {
+  overflow-clip-margin: unset !important;
+  overflow: unset !important;
+}
+
+svg {
+  position: unset !important;
+  left: unset !important;
+  top: unset !important;
+}
+
 .container {
   max-width: 1370px;
   width: 100%;
