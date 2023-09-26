@@ -11,6 +11,7 @@ import TurbologoImg from "@/assets/images/turbologo.png";
 import HeartCareImg from "@/assets/images/heartcare.png";
 import SafeImg from "@/assets/images/safeguard.png";
 import Counter from "@/components/counter";
+import { AboutUs } from "@/components/home";
 
 const Home = () => {
   const contractList = useMemo(
@@ -49,6 +50,7 @@ const Home = () => {
 
   return (
     <Page title="Home">
+      <AboutUs />
       <Features />
       <Contract color="white" sliders={contractList} />
       <Info />

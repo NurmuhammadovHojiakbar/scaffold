@@ -1,5 +1,6 @@
 import AboutImg1 from "@/assets/images/about-07.jpg";
 import AboutImg2 from "@/assets/images/about-08.jpg";
+import Experience from "../experience";
 
 const AboutInfo = () => {
   return (
@@ -27,15 +28,7 @@ const AboutInfo = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
-          <div className="about-info__experience">
-            <h2 className="about-info__experience-year">
-              25<sub>+</sub>
-            </h2>
-            <div className="about-info__experience-wrapper">
-              <h3 className="about-info__experience-title-sm">Years of</h3>
-              <h2 className="about-info__experience-title-lg">Experience</h2>
-            </div>
-          </div>
+          <Experience />
         </div>
       </div>
     </section>
