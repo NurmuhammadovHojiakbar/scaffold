@@ -1,3 +1,4 @@
+import { CaseStudyList } from "@/components/case-study";
 import Container from "@/layout/container";
 
 const CaseStudy = () => {
@@ -14,7 +15,7 @@ const CaseStudy = () => {
   ];
   return (
     <Container title="Case Study" linksList={links} headerTitle="Case Study">
-      Case Study page
+      <CaseStudyList />
     </Container>
   );
 };
