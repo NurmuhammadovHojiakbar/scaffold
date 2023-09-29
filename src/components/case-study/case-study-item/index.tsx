@@ -13,7 +13,6 @@ const CaseStudyItem = ({ case_study }: PropType) => {
           className="case-study__item-img"
           src={`${import.meta.env.VITE_BASE_URL}${case_study.images[0]}`}
           alt="Clients"
-          width={570}
           height={450}
         />
       </div>
