@@ -1,4 +1,5 @@
 import Container from "@/layout/container";
+import { BlogContainer } from "@/components/blog";
 
 const Blog = () => {
   const links = [
@@ -14,7 +15,7 @@ const Blog = () => {
   ];
   return (
     <Container title="Blog" linksList={links} headerTitle="Blog">
-      Blog page
+      <BlogContainer />
     </Container>
   );
 };
