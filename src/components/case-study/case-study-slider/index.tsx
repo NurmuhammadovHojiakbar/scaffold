@@ -1,9 +1,11 @@
 import { useGetCasesQuery } from "@/store/api/case-study";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CaseStudyItem } from "..";
+import useWindowWidth from "@/hooks/use-window-width";
 
 const CaseStudySlider = () => {
   const { data: cases } = useGetCasesQuery(1);
+  const width = useWindowWidth();
 
   return (
     <div className="projects-slider">
@@ -17,7 +19,7 @@ const CaseStudySlider = () => {
         </h2>
 
         <div className="project-slider__wrapper">
-          <Swiper slidesPerView={2} spaceBetween={30}>
+          <Swiper slidesPerView={width > 770 ? 2 : 1} spaceBetween={30}>
             {cases?.results.map((case_study) => (
               <SwiperSlide>
                 <CaseStudyItem case_study={case_study} key={case_study.id} />

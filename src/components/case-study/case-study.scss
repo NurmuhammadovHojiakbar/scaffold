@@ -102,7 +102,51 @@
 }
 
 .projects-slider{
+    position: relative;
     padding: 90px 0;
+
+    &__title{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%, -25px);
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--grey-color);
+        font-size: 240px;
+        line-height: 1;
+    }
+
+    &__container{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .projects-slider{
+        &__title{
+            font-size: 190px;
+            transform: translate(-50%, -19px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .projects-slider{
+        .case-study{
+            &__item{
+                &-details{
+                    max-width: unset;
+                    width: auto;
+                    left: 20px;
+                    right: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -116,7 +160,60 @@
             width: 100%;
         }
     }
+
+    .projects-slider{
+        &__title{
+            font-size: 150px;
+            transform: translate(-50%, -15px);
+        }
+    }
 }
+
+@media only screen and (max-width: 950px) {
+    .projects-slider{
+        .case-study{
+            &__item{
+    
+                &-img{
+                    height: 350px;
+                }
+    
+                &-details{
+                    padding: 23px 30px;
+                    left: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .projects-slider{
+        &__title{
+            font-size: 100px;
+            transform: translate(-50%, -10px);
+        }
+        .swiper-slide{
+            display: flex;
+            justify-content: center;
+        }
+
+        .case-study{
+            &__item{
+                flex-grow: 1;
+            }
+        }
+
+        &__container{
+            &-heading.title-lg{
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 650px) {
     .case-study{
@@ -127,6 +224,15 @@
                 left: 20px;
                 right: 20px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .projects-slider{
+        &__title{
+            font-size: 70px;
+            transform: translate(-50%, -7px);
         }
     }
 }
@@ -143,6 +249,15 @@
                 padding: 23px 30px;
                 left: 10px;
                 right: 10px;
+            }
+        }
+    }
+
+    .projects-slider{
+        &__container{
+            &-heading.title-lg{
+                font-size: 28px;
+                line-height: 40px;
             }
         }
     }
