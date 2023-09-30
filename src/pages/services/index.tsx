@@ -9,7 +9,7 @@ import Sponsor4 from "@/assets/images/sponsor-4.png";
 import Sponsor5 from "@/assets/images/sponsor-5.png";
 import Sponsor6 from "@/assets/images/sponsor-6.png";
 import Sponsor7 from "@/assets/images/sponsor-7.png";
-import { PricePlans } from "@/components/services";
+import { PricePlans, ServicesList } from "@/components/services";
 import Counter from "@/components/counter";
 
 const Services = () => {
@@ -59,6 +59,7 @@ const Services = () => {
   ];
   return (
     <Container title="Services" linksList={links} headerTitle="Services">
+      <ServicesList />
       <PricePlans />
       <Counter
         trackColor="#314d79"

@@ -4,6 +4,7 @@ import logger from "redux-logger";
 import rootReducer from "./reducers";
 import CaseStudyApi from "./api/case-study";
 import blogApi from "./api/blogs";
+import servicesApi from "./api/services";
 
 const store = configureStore({
   reducer: rootReducer,
@@ -11,7 +12,8 @@ const store = configureStore({
     gm({ serializableCheck: false }).concat(
       logger,
       CaseStudyApi.middleware,
-      blogApi.middleware
+      blogApi.middleware,
+      servicesApi.middleware
     ),
   devTools: false,
 });

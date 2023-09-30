@@ -96,6 +96,56 @@
 }
 
 
+.services-list{
+    padding: 120px 0;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item{
+        flex-basis: calc(33% - 20px);
+
+        &-wrapper{
+            display: flex;
+            height: 250px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        &-wrapper:hover &-img{
+            transform: scale(1.1);
+        }
+
+        &-img{
+            flex-grow: 1;
+            object-fit: cover;
+            transition: 0.3s ease;
+        }
+
+        &-title{
+            font-size: 25px;
+            line-height: 28px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--blue-color);
+        }
+
+        &-desc{
+            p{
+                margin: 0;
+                color: var(--blue-color);
+                font-size: 16px;
+                line-height: 29px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .price-plans{
         &__list{
@@ -112,6 +162,14 @@
             &.active{
                 padding: 70px 50px 65px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .services-list{
+        &__item{
+            flex-basis: calc(50% - 15px);
         }
     }
 }
@@ -139,6 +197,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 700px) {
+    .services-list{
+
+        &__list{
+            justify-content: center;
+        }
+
+        &__item{
+            max-width: 400px;
+            width: 100%;
+            flex-basis: unset;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 450px) {
     .price-plans{
