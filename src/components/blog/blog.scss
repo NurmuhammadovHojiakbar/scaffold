@@ -37,4 +37,47 @@
             }
         }
     }
+
+    &-search{
+        &__container{
+            padding: 0 40px 35px;
+        }
+
+        &__wrapper{
+            display: flex;
+            background-color: #fff;
+            border-radius: 25px;
+
+            &-input{
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 100%;
+                padding-left: 25px;
+            }
+
+            &-btn{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                border: none;
+                background-color: var(--orange-color);
+                color: #fff;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: var(--blue-color);
+                }
+
+                svg{
+                    width: 18px;
+                    stroke-width: 3;
+                }
+            }
+        }
+    }
 }
