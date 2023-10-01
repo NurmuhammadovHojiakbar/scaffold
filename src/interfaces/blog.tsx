@@ -38,5 +38,5 @@ export interface BlogListInterface {
   count: number;
   next: string | null;
   previous: string | null;
-  results: BlogCommentInterface[];
+  results: BlogInterface[];
 }
