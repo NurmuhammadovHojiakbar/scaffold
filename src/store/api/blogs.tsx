@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { BlogListInterface } from "@/interfaces/blog";
+import { BlogCategoryInterface, BlogListInterface } from "@/interfaces/blog";
 
 type dataType = {
   page?: number;
@@ -16,8 +16,11 @@ const blogApi = createApi({
       query: ({ page, search }) =>
         `post/?page=${page || 1}&search=${search || ""}`,
     }),
+    getBlogCategories: build.query<BlogCategoryInterface[], void>({
+      query: () => "post-category",
+    }),
   }),
 });
 
-export const { useGetBlogsQuery } = blogApi;
+export const { useGetBlogsQuery, useGetBlogCategoriesQuery } = blogApi;
 export default blogApi;

@@ -15,6 +15,16 @@ export interface BlogCommentInterface {
   post: number;
 }
 
+export interface BlogCategoryInterface {
+  id: number;
+  created: string;
+  modified: string;
+  title: string;
+  title_en: string;
+  title_ru: string;
+  active: boolean;
+}
+
 export interface BlogInterface {
   id: number;
   created: string;
