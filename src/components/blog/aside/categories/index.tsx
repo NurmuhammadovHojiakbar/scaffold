@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const BlogCategory = () => {
   const { data: categories } = useGetBlogCategoriesQuery();
-  console.log(categories);
   return (
     <div className="blog-aside__wrapper blog-category">
       <div className="blog-aside__wrapper-header">

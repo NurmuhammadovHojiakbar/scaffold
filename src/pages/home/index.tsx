@@ -11,7 +11,7 @@ import TurbologoImg from "@/assets/images/turbologo.png";
 import HeartCareImg from "@/assets/images/heartcare.png";
 import SafeImg from "@/assets/images/safeguard.png";
 import Counter from "@/components/counter";
-import { AboutUs } from "@/components/home";
+import { AboutUs, News } from "@/components/home";
 import { CaseStudySlider } from "@/components/case-study";
 
 const Home = () => {
@@ -66,6 +66,7 @@ const Home = () => {
         detailsColor="#00235a"
         titleColor="#f4f4f4"
       />
+      <News />
     </Page>
   );
 };

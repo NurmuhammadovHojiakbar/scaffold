@@ -39,7 +39,7 @@ export interface BlogInterface {
   image: string;
   publication_date: string;
   source: string;
-  category: number;
+  category: BlogCategoryInterface;
   tag: BlogTagInterface[];
   comments: BlogCommentInterface[];
 }

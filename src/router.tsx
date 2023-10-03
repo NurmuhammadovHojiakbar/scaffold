@@ -5,6 +5,7 @@ import CaseStudy from "./pages/case-study";
 import Blog from "./pages/blog";
 import Services from "./pages/services";
 import Home from "./pages/home";
+import BlogContent from "./pages/blog-content";
 
 const Router = () => {
   return useRoutes([
@@ -31,6 +32,10 @@ const Router = () => {
     {
       path: "/blog",
       element: <Blog />,
+    },
+    {
+      path: "/blog/:id",
+      element: <BlogContent />,
     },
   ]);
 };

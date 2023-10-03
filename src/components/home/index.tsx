@@ -1,4 +1,5 @@
-import "./home.scss";
+import News from "./news";
 import AboutUs from "./about-us";
+import "./home.scss";
 
-export { AboutUs };
+export { AboutUs, News };

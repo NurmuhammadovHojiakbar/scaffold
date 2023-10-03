@@ -11,7 +11,7 @@ type PropType = {
 const BlogContainer = ({ children }: PropType) => {
   return (
     <div className="blog">
-      <div className="container blog-container">
+      <div className="container container-sm blog-container">
         <section className="blog-wrapper">{children}</section>
         <aside className="blog-aside">
           <BlogSearch />

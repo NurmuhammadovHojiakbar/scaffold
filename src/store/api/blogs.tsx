@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {
   BlogCategoryInterface,
+  BlogInterface,
   BlogListInterface,
   BlogTagInterface,
 } from "@/interfaces/blog";
@@ -24,6 +25,9 @@ const blogApi = createApi({
           page || 1
         }&search=${search || ""}`,
     }),
+    getBlogById: build.query<BlogInterface, number>({
+      query: (id) => `post/${id}`,
+    }),
     getBlogCategories: build.query<BlogCategoryInterface[], void>({
       query: () => "post-category",
     }),
@@ -37,5 +41,6 @@ export const {
   useGetBlogsQuery,
   useGetBlogCategoriesQuery,
   useGetBlogTagsQuery,
+  useGetBlogByIdQuery,
 } = blogApi;
 export default blogApi;

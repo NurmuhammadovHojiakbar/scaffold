@@ -28,7 +28,7 @@ const BlogItem = ({ blog }: PropType) => {
           </p>
         </div>
         <h2 className="blog-item__info-title">
-          <Link to={`/blogs/${blog.id}`}>{blog.title}</Link>
+          <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
         </h2>
         <div
           className="blog-item__info-content"
@@ -36,7 +36,7 @@ const BlogItem = ({ blog }: PropType) => {
             __html: `${blog.content.slice(0, 300)}...`,
           }}
         ></div>
-        <Link className="blog-item__info-link" to={`/blogs/${blog.id}`}>
+        <Link className="blog-item__info-link" to={`/blog/${blog.id}`}>
           Read More
         </Link>
       </div>
