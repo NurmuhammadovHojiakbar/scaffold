@@ -5,8 +5,7 @@ import { useGetBlogByIdQuery } from "@/store/api/blogs";
 
 const BlogContent = () => {
   const { id } = useParams();
-  const { data: blog } = useGetBlogByIdQuery(Number(id));
-  console.log(blog);
+  const { data: blog, isError } = useGetBlogByIdQuery(Number(id));
   const links = [
     {
       id: 1,
@@ -23,11 +22,10 @@ const BlogContent = () => {
       title: "Blog",
     },
   ];
+  console.log(isError);
   return (
     <Container title="Blog" linksList={links} headerTitle="Blog">
-      <BlogContainer>
-        <BlogPage />
-      </BlogContainer>
+      <BlogContainer>{blog && <BlogPage blog={blog} />}</BlogContainer>
     </Container>
   );
 };
