@@ -1,5 +1,6 @@
 import { CalendarIcon, CommentIcon, UserIcon } from "@/components/icons";
 import { BlogInterface } from "@/interfaces/blog";
+import { Link } from "react-router-dom";
 
 type PropType = {
   blog: BlogInterface;
@@ -30,10 +31,24 @@ const BlogPage = ({ blog }: PropType) => {
           <div
             className="blog-item__info-content"
             dangerouslySetInnerHTML={{
-              __html: `${blog.content.slice(0, 300)}...`,
+              __html: blog.content,
             }}
           ></div>
-          <div className="blog-item__tags"></div>
+          <div className="blog-item__tags">
+            <h3 className="blog-item__tags-title">Post Tags</h3>
+            <ul className="blog-item__tags-list">
+              {blog.tag.map((tag) => (
+                <li className="blog-item__tags-item" key={tag.id}>
+                  <Link
+                    className="blog-item__tags-link"
+                    to={`/blog?tag=${tag.name}`}
+                  >
+                    {tag.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

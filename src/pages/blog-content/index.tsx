@@ -19,12 +19,16 @@ const BlogContent = () => {
     },
     {
       id: 2,
-      title: "Blog",
+      title: blog?.title || "404",
     },
   ];
   console.log(isError);
   return (
-    <Container title="Blog" linksList={links} headerTitle="Blog">
+    <Container
+      title="Blog"
+      linksList={links}
+      headerTitle={blog?.title || "Not Found"}
+    >
       <BlogContainer>{blog && <BlogPage blog={blog} />}</BlogContainer>
     </Container>
   );
