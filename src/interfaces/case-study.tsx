@@ -18,7 +18,7 @@ export interface CaseStudyInterface {
   description_en: string;
   description_ru: string;
   client: string;
-  date: string;
+  date: number;
   status: number;
   active: boolean;
   case_category: CaseCategoryInterface;

@@ -29,7 +29,11 @@ const CaseStudyItem = ({ case_study }: PropType) => {
           </p>
           <p className="case-study__item-time">
             <ClockIcon className="case-study__item-icon" />
-            <span>{case_study.date}</span>
+            <span>
+              {case_study.date === 1
+                ? `${case_study.date} month`
+                : `${case_study.date} months`}{" "}
+            </span>
           </p>
         </div>
       </div>
