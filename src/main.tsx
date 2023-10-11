@@ -6,6 +6,8 @@ import { Provider } from "react-redux";
 import App from "./App.tsx";
 import "./index.scss";
 import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/effect-fade";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

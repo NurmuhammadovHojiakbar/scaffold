@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import HeroItem from "../hero-item";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 
 const Hero = () => {
   const heros = [
@@ -33,7 +33,12 @@ const Hero = () => {
   ];
   return (
     <section className="site-hero">
-      <Swiper navigation={true} modules={[Navigation]}>
+      <Swiper
+        navigation={true}
+        autoplay={{ delay: 8000, disableOnInteraction: false }}
+        effect="fade"
+        modules={[Navigation, Autoplay, EffectFade]}
+      >
         {heros.map((hero) => (
           <SwiperSlide key={hero.id}>
             <HeroItem {...hero} />
