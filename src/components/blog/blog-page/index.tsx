@@ -1,6 +1,7 @@
 import { CalendarIcon, CommentIcon, UserIcon } from "@/components/icons";
 import { BlogInterface } from "@/interfaces/blog";
 import { Link } from "react-router-dom";
+import Comment from "../comment";
 
 type PropType = {
   blog: BlogInterface;
@@ -51,6 +52,7 @@ const BlogPage = ({ blog }: PropType) => {
           </div>
         </div>
       </div>
+      <Comment />
     </div>
   );
 };
