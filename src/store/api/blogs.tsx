@@ -34,6 +34,14 @@ const blogApi = createApi({
     getBlogTags: build.query<BlogTagInterface[], void>({
       query: () => "tag",
     }),
+    /*Mutators*/
+    addComment: build.mutation({
+      query: ({ ...post }) => ({
+        url: "comment/",
+        method: "POST",
+        body: post,
+      }),
+    }),
   }),
 });
 
@@ -42,5 +50,6 @@ export const {
   useGetBlogCategoriesQuery,
   useGetBlogTagsQuery,
   useGetBlogByIdQuery,
+  useAddCommentMutation,
 } = blogApi;
 export default blogApi;
