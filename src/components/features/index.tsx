@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import "./features.scss";
 
-const Features = ({ title, data }) => {
+type PropType = {
+  title: string;
+  data: {
+    id: number;
+    title: string;
+    text: string;
+    class: string;
+  }[];
+};
+
+const Features = ({ title, data }: PropType) => {
   return (
     <section className="features">
       <h2 className="features-title">Features</h2>

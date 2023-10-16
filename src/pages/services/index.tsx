@@ -1,6 +1,6 @@
 import Contract from "@/components/contracts";
 import Features from "@/components/features";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Container from "@/layout/container";
 import Sponsor1 from "@/assets/images/sponsor-1.png";
 import Sponsor2 from "@/assets/images/sponsor-2.png";
@@ -9,7 +9,7 @@ import Sponsor4 from "@/assets/images/sponsor-4.png";
 import Sponsor5 from "@/assets/images/sponsor-5.png";
 import Sponsor6 from "@/assets/images/sponsor-6.png";
 import Sponsor7 from "@/assets/images/sponsor-7.png";
-import { PricePlans, ServicesList } from "@/components/services";
+import { ServicesList } from "@/components/services";
 import HelmetImg from "@/assets/images/helmet.png";
 import SawMachineImg from "@/assets/images/cutting-machine.png";
 import ToolsImg from "@/assets/images/repair-tools.png";
@@ -114,9 +114,9 @@ const Services = () => {
     },
   ];
 
-  const [expandedItem, setExpandedItem] = useState(null);
+  const [expandedItem, setExpandedItem] = useState<number | null>(null);
 
-  const handleShowMore = (itemId) => {
+  const handleShowMore = (itemId: null | number) => {
     setExpandedItem(itemId === expandedItem ? null : itemId);
   };
 
