@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <div className="about-info__experience">
       <h2 className="about-info__experience-year">
-        25<sub>+</sub>
+        10<sub>+</sub>
       </h2>
       <div className="about-info__experience-wrapper">
         <h3 className="about-info__experience-title-sm">Years of</h3>

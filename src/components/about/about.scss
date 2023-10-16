@@ -1,13 +1,13 @@
-.about-services{
+.about-services {
     position: relative;
     padding: 90px 0;
 
-    &__title{
+    &__title {
         position: absolute;
         top: 0;
         left: 50%;
         text-transform: uppercase;
-        transform: translate(-50%,-25px);
+        transform: translate(-50%, -25px);
         margin: 0;
         color: transparent;
         -webkit-text-stroke-width: 1px;
@@ -16,30 +16,30 @@
         line-height: 1;
     }
 
-    &__container{
-        &-title{
+    &__container {
+        &-title {
             text-align: center;
         }
-        
-        &-heading{
+
+        &-heading {
             text-align: center;
         }
     }
 
-    &__list{
+    &__list {
         display: flex;
         justify-content: space-between;
         gap: 24px;
     }
 
-    &__item{
+    &__item {
         flex-grow: 1;
         flex-basis: calc(33% - 12px);
         padding: 55px 50px;
         border: 2px solid #fafafa;
         position: relative;
 
-        &::before{
+        &::before {
             content: "";
             width: 0;
             height: 5px;
@@ -50,15 +50,15 @@
             transition: 0.3s;
         }
 
-        &:hover::before{
+        &:hover::before {
             width: 100%;
         }
 
-        &-img{
+        &-img {
             margin-bottom: 30px;
         }
 
-        &-title{
+        &-title {
             margin-top: 0;
             margin-bottom: 15px;
             font-size: 19px;
@@ -67,7 +67,7 @@
             font-weight: 700;
         }
 
-        &-text{
+        &-text {
             margin: 0;
             font-size: 16px;
             line-height: 29px;
@@ -77,43 +77,61 @@
     }
 }
 
-.about-info{
+.services-cards-item-text {
+    color: #aabcd8;
+    flex: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Galano grotesque, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.service-cards-show-more-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-info {
     padding: 120px 0;
     background: url("../../assets/images/building-sketch-bg.png") no-repeat center 0%;
     background-size: cover;
 
-    &__container{
+    &__container {
         display: flex;
         align-items: center;
         gap: 60px;
     }
 
-    &__wrapper{
+    &__wrapper {
         position: relative;
         max-width: 50%;
         width: 100%;
         padding-bottom: 245px;
 
-        &-worker-img{
+        &-worker-img {
             position: absolute;
             left: 25%;
             top: 30%;
         }
     }
 
-    &__details{
+    &__details {
         max-width: 50%;
         width: 100%;
 
-        &-title.title-sm{
+        &-title.title-sm {
             margin-bottom: 14px;
         }
 
-        &-heading.title-lg{
+        &-heading.title-lg {
             margin-bottom: 8px;
         }
 
-        &-text{
+        &-text {
             margin-top: 0;
             margin-bottom: 40px;
             font-size: 18px;
@@ -123,30 +141,30 @@
         }
     }
 
-    &__experience{
+    &__experience {
         display: flex;
         background-color: #fff;
         padding: 35px 25px 35px 35px;
         border-bottom: 4px solid var(--orange-color);
         -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 94, 20, 0.3);
         box-shadow: 0px 20px 40px 0px rgba(255, 94, 20, 0.3);
-        
-        &-year{
+
+        &-year {
             margin: 0 25px 0 0;
             font-size: 80px;
             line-height: 65px;
             color: var(--orange-color);
             font-weight: bold;
-            
-            sub{
+
+            sub {
                 position: relative;
                 font-size: 25px;
                 line-height: 1;
                 bottom: 15px;
             }
         }
-        
-        &-title-sm{
+
+        &-title-sm {
             margin-top: 0;
             margin-bottom: 8px;
             font-size: 16px;
@@ -156,7 +174,7 @@
             color: var(--blue-color);
         }
 
-        &-title-lg{
+        &-title-lg {
             margin-top: 0;
             margin-bottom: 0;
             color: var(--blue-color);
@@ -169,16 +187,16 @@
 }
 
 @media only screen and (max-width: 1150px) {
-    .about-services{
-        &__title{
+    .about-services {
+        &__title {
             font-size: 180px;
-            transform: translate(-50%,-18px);
+            transform: translate(-50%, -18px);
         }
     }
 
-    .about-info{
-        &__wrapper{
-            &-worker-img{
+    .about-info {
+        &__wrapper {
+            &-worker-img {
                 left: 12%;
             }
         }
@@ -186,15 +204,15 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .about-services{
-        &__list{
+    .about-services {
+        &__list {
             flex-wrap: wrap;
         }
     }
 
-    .about-info{
-        &__wrapper{
-            &-worker-img{
+    .about-info {
+        &__wrapper {
+            &-worker-img {
                 left: 12%;
             }
         }
@@ -202,61 +220,62 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .about-info{
-        &__container{
+    .about-info {
+        &__container {
             flex-direction: column;
         }
 
-        &__wrapper{
+        &__wrapper {
             max-width: 100%;
-            &-worker-img{
+
+            &-worker-img {
                 left: 25%;
             }
         }
 
-        &__details{
+        &__details {
             max-width: 100%;
         }
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .about-services{
-        &__title{
+    .about-services {
+        &__title {
             font-size: 100px;
-            transform: translate(-50%,-10px);
+            transform: translate(-50%, -10px);
         }
     }
 }
 
 
 @media only screen and (max-width: 700px) {
-    .about-services{
-        &__list{
+    .about-services {
+        &__list {
             flex-direction: column;
         }
     }
 }
 
 @media only screen and (max-width: 650px) {
-    .about-info{
-        &__wrapper{
+    .about-info {
+        &__wrapper {
             padding-bottom: 0;
-            
-            
-            &-img{
+
+
+            &-img {
                 width: 100%;
             }
 
-            &-worker-img{
+            &-worker-img {
                 display: none;
             }
         }
 
-        &__details{
+        &__details {
             max-width: 100%;
 
-            &-heading.title-lg{
+            &-heading.title-lg {
                 font-size: 40px;
                 line-height: 48px;
             }
@@ -265,31 +284,31 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .about-services{
-        &__title{
+    .about-services {
+        &__title {
             font-size: 60px;
-            transform: translate(-50%,-6px);
+            transform: translate(-50%, -6px);
         }
 
-        &__container{
-            &-heading.title-lg{
+        &__container {
+            &-heading.title-lg {
                 font-size: 40px;
                 line-height: 48px;
             }
         }
     }
 
-    .about-info{
+    .about-info {
 
-        &__experience{
+        &__experience {
             padding: 30px 20px;
 
-            &-year{
+            &-year {
                 font-size: 55px;
                 margin-right: 20px;
             }
 
-            &-title-lg{
+            &-title-lg {
                 font-size: 32px;
             }
         }

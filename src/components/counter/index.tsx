@@ -27,25 +27,25 @@ const Counter = ({
       id: 1,
       title: "Project done",
       desc: "Construction Simulator",
-      procent: 78,
+      procent: 300,
     },
     {
       id: 2,
       title: "Happy clients",
       desc: "Construction Simulator",
-      procent: 90,
+      procent: 96,
     },
     {
       id: 3,
       title: "Completed co.",
       desc: "Construction Simulator",
-      procent: 62,
+      procent: 97,
     },
     {
       id: 4,
       title: "Country cover",
       desc: "Construction Simulator",
-      procent: 85,
+      procent: 99,
     },
   ];
 

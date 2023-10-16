@@ -15,7 +15,8 @@ const CaseStudySlider = () => {
           Case Study
         </h3>
         <h2 className="title-lg projects-slider__container-heading">
-          AMAZING STRUCTURE <br /> BUILD BY US.
+          Explore Our Remarkable Achievements in the
+          <br /> Scaffolding Industry
         </h2>
 
         <div className="project-slider__wrapper">

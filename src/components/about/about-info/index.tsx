@@ -1,4 +1,4 @@
-import AboutImg1 from "@/assets/images/about-07.jpg";
+import AboutImg1 from "@/assets/images/top-image.jpeg";
 import AboutImg2 from "@/assets/images/about-08.jpg";
 import Experience from "../experience";
 
@@ -14,19 +14,18 @@ const AboutInfo = () => {
           />
           <img
             className="about-info__wrapper-worker-img"
-            src={AboutImg2}
+            src={AboutImg2} 
             alt="Worker"
           />
         </div>
         <div className="about-info__details">
           <h3 className="title-sm about-info__details-title">About Us</h3>
           <h2 className="title-lg about-info__details-heading">
-            Depending on ours need
+          Betascaffolding  London's Premier Scaffolding Partner 
           </h2>
           <p className="about-info__details-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          At Betascaffolding, we are London's top-rated scaffolders, dedicated to providing high-quality scaffolding and exceptional services. With a wealth of experience, our expert team delivers tailored, safe, and timely scaffolding solutions for your diverse projects. Choose Betascaffolding for excellence from start to finish. Your project deserves the best.
+
           </p>
           <Experience />
         </div>

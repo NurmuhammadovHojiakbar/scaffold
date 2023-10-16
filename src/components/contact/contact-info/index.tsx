@@ -6,19 +6,19 @@ const ContactInfo = () => {
       id: 1,
       icon: <MailIcon />,
       title: "Email Address",
-      values: ["info@webmail.com", "jobs@webmail.info"],
+      values: ["betascaffolding@outlook.com"],
     },
     {
       id: 2,
       icon: <PhoneIcon />,
       title: "Phone Number",
-      values: ["+987 (876) 8656 46", "+987 (564) 675 67"],
+      values: ["+44 7436 659526"],
     },
     {
       id: 3,
       icon: <MapIcon />,
       title: "Office Address",
-      values: ["14/A, Queen Street City Town", "New York, US"],
+      values: ["86-90 Paul Street, London, United Kingdom, EC2A 4NE"],
     },
   ];
   return (

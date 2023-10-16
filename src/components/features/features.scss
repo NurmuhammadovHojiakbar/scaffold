@@ -1,15 +1,15 @@
-.features{
+.features {
     position: relative;
     padding: 120px 0;
-    background: url("../../assets/images/feature-bg.jpg") no-repeat center;
+    background: url("../../assets/images/main-image-contact.jpeg") no-repeat center;
     background-size: cover;
 
-    &-title{
+    &-title {
         position: absolute;
         top: 0;
         left: 50%;
         text-transform: uppercase;
-        transform: translate(-50%,-25px);
+        transform: translate(-50%, -25px);
         margin: 0;
         color: transparent;
         -webkit-text-stroke-width: 1px;
@@ -18,37 +18,42 @@
         line-height: 1;
     }
 
-    &-container{
+    &-container {
         position: relative;
         z-index: 1;
     }
 
-    &-wrapper{
+    &-wrapper {
         max-width: 570px;
         width: 100%;
 
-        &__title{
+        &__title {
             margin-bottom: 14px;
         }
 
-        .btn{
+        .btn {
             display: inline-block;
+        }
+
+        &__heading.title-lg {
+            font-size: 40px;
+            line-height: 48px;
         }
     }
 
-    &-list{
+    &-list {
         display: flex;
         flex-direction: column;
         gap: 25px;
         margin-bottom: 25px;
     }
 
-    &-item{
+    &-item {
         display: flex;
         align-items: flex-start;
         gap: 35px;
 
-        &__img{
+        &__img {
             position: relative;
             width: 90px;
             height: 90px;
@@ -59,22 +64,22 @@
             border-radius: 100%;
             flex-shrink: 0;
 
-            &::before{
+            &::before {
                 content: "";
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
-            
-            &.beam::before{
+
+            &.beam::before {
                 width: 50px;
                 height: 50px;
                 background: url("../../assets/images/beam.png") no-repeat center;
                 background-size: contain;
             }
-            
-            &.hammer::before{
+
+            &.hammer::before {
                 width: 35px;
                 height: 35px;
                 background: url("../../assets/images/hammer.png") no-repeat center;
@@ -83,7 +88,7 @@
 
         }
 
-        &__title{
+        &__title {
             margin-top: 0;
             margin-bottom: 11px;
             font-size: 24px;
@@ -91,7 +96,7 @@
             color: var(--blue-color);
         }
 
-        &__text{
+        &__text {
             margin: 0;
             color: var(--blue-color);
         }
@@ -99,22 +104,22 @@
 }
 
 @media only screen and (max-width: 1250px) {
-    .features{
-        &-title{
+    .features {
+        &-title {
             font-size: 180px;
-            transform: translate(-50%,-20px);
+            transform: translate(-50%, -20px);
         }
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .features{
-        &-title{
+    .features {
+        &-title {
             font-size: 150px;
-            transform: translate(-50%,-15px);
+            transform: translate(-50%, -15px);
         }
 
-        &-wrapper{
+        &-wrapper {
             margin-left: auto;
             margin-right: auto;
         }
@@ -122,14 +127,14 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .features{
-        &-title{
+    .features {
+        &-title {
             font-size: 100px;
-            transform: translate(-50%,-10px);
+            transform: translate(-50%, -10px);
         }
 
-        &-wrapper{
-            &__heading.title-lg{
+        &-wrapper {
+            &__heading.title-lg {
                 font-size: 40px;
                 line-height: 48px;
             }
@@ -138,32 +143,32 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .features{
-        &-title{
+    .features {
+        &-title {
             font-size: 60px;
-            transform: translate(-50%,-6px);
+            transform: translate(-50%, -6px);
         }
 
-        &-wrapper{
-            &__heading.title-lg{
+        &-wrapper {
+            &__heading.title-lg {
                 font-size: 32px;
                 line-height: 48px;
             }
         }
 
-        &-item{
+        &-item {
             gap: 20px;
 
-            &__img{
+            &__img {
                 width: 50px;
                 height: 50px;
             }
 
-            &__title{
+            &__title {
                 font-size: 20px;
             }
 
-            &__text{
+            &__text {
                 font-size: 14px;
             }
         }

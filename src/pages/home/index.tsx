@@ -48,18 +48,42 @@ const Home = () => {
     ],
     []
   );
+  const features = [
+    {
+      id: 1,
+      title:
+        "We have a spotless track-record with customers and clients across a range of industry Verticals/Services in multiple locations.",
+      text: `1)All our scaffolders are trained and certified
+      2)Satisfaction guaranteed on every project
+      3)Residential and Commercial services
+      4) 15 Years of Combined Experience
+      5) All types of extensions`,
+      class: "beam",
+    },
+    {
+      id: 2,
+      title: "High-Quality Scaffolding",
+      text: "Quality is the cornerstone of our scaffolding services. We use only the finest materials that adhere to the industry's highest standards. Our scaffolding structures are not only sturdy and secure but also designed to meet the specific needs of your project. Whether it's for new construction, maintenance, or any other application, our scaffolding is engineered for excellence and safety.",
+      class: "hammer",
+    },
+  ];
 
   return (
     <Page title="Home">
       <Hero />
       <AboutUs />
-      <Features />
+      <Features
+        data={features}
+        title={
+          "Trusted Scaffolding Services in London Range of Projects, Certified Scaffolders, 10 Years Experience"
+        }
+      />
       <Contract color="white" sliders={contractList} />
       <CaseStudySlider />
       <Info />
       <Counter
-        title="Counter"
-        heading={`Get Amazing Puried <br /> With Us.`}
+        title="OUR WORKS"
+        heading={`Browse Our Recent Proudly  <br /> Completed Projects.`}
         trackColor="#314d79"
         color="#ff5e14"
         textColor="#ff5e14"

@@ -6,15 +6,17 @@ type PropType = {
   color: string;
   trackColor: string;
   textColor: string;
+  text: string;
 };
 
-const Chart = ({ color, percent, trackColor, textColor }: PropType) => {
+const Chart = ({ color, percent, trackColor, textColor, text }: PropType) => {
   return (
     <div className="chart">
       <CircularProgressBar
         color={color}
         trackColor={trackColor}
         size={"11px"}
+        text={text}
         percentage={percent}
         radius="100px"
         percentageStyle={{

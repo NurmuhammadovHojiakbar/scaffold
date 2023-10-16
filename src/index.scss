@@ -53,19 +53,20 @@
 }
 
 :root {
-    --main-font-family: "Roboto", "Arial", sans-serif;
-    --blue-color: #00235a;
-    --light-blue-color: #c0d9ff;
-    --lighter-blue-color: #f5faff;
-    --dark-blue-color: #393f53;
-    --darker-blue-color: #00122f;
-    --bold-blue-color: #001940;
-    --orange-color: #ff5e14;
-    --light-orange-color: #ff5e14e6;
-    --context-color: #aabcd8;
-    --pink-color: #d6e4ff;
-    --light-pink-color: #f6f9ff;
-    --grey-color: #f4f4f4;
+  --main-font-family: "Roboto", "Arial", sans-serif;
+  --blue-color: #00235a;
+  --light-blue-color: #c0d9ff;
+  --lighter-blue-color: #f5faff;
+  --dark-blue-color: #393f53;
+  --darker-blue-color: #00122f;
+  --bold-blue-color: #001940;
+  --orange-color: #ff5e14;
+  --light-orange-color: #ff5e14e6;
+  --context-color: #aabcd8;
+  --pink-color: #d6e4ff;
+  --light-pink-color: #f6f9ff;
+  --grey-color: #f4f4f4;
+  --button-color: rgb(42, 67, 212);
 }
 
 html {
@@ -129,7 +130,7 @@ svg {
   margin-right: auto;
 }
 
-.container-sm{
+.container-sm {
   max-width: 1170px;
 }
 
@@ -144,7 +145,7 @@ svg {
 .title-lg {
   font-size: 60px;
   line-height: 70px;
-  color: var(--blue-color);
+  color: var(--button-color);
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -160,19 +161,21 @@ svg {
   width: 1px;
 }
 
-.btn{
+.btn {
   align-self: center;
   padding: 20px 50px;
   text-transform: uppercase;
-  color: #fff;
-  border: none;
+  color: var(--blue-color);
+  // border: none;
   outline: none;
-  background-color: var(--orange-color);
+  border: 1px solid var(--blue-color);
+  background-color: white;
   transition: 0.3s ease;
   font-size: 14px;
   font-weight: bold;
 
-  &:hover{
-      background-color: var(--blue-color);
+  &:hover {
+    background-color: var(--blue-color);
+    color: white;
   }
 }

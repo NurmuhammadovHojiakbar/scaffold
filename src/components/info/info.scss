@@ -1,37 +1,37 @@
-.info{
+.info {
     display: flex;
 
-    &.reverse{
+    &.reverse {
         flex-direction: row-reverse;
     }
 
-    &-img{
+    &-img {
         min-height: 500px;
         flex-basis: 50%;
-        background: url("../../assets/images/workers.jpg") no-repeat center;
-        background-size: cover;
+        background: url("../../assets/images/about-main-image.jpeg") no-repeat center;
+        background-size: auto;
     }
 
-    &-wrapper{
+    &-wrapper {
         display: flex;
         flex-basis: 50%;
     }
 
-    &-item{
+    &-item {
         display: flex;
         flex-grow: 1;
-        
-        &__wrapper{
+
+        &__wrapper {
             flex-grow: 1;
             padding: 100px 60px;
             background-color: var(--blue-color);
         }
 
-        &__img{
+        &__img {
             margin-bottom: 35px;
         }
 
-        &__title{
+        &__title {
             font-size: 30px;
             line-height: 40px;
             font-weight: bold;
@@ -41,7 +41,7 @@
             margin-bottom: 16px;
         }
 
-        &__text{
+        &__text {
             font-size: 16px;
             line-height: 29px;
             color: #fff;
@@ -49,7 +49,7 @@
             margin-bottom: 16px;
         }
 
-        &__link{
+        &__link {
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -60,78 +60,79 @@
             transition: 0.3s ease;
             font-weight: 700;
 
-            &:hover{
+            &:hover {
                 background-color: #fff;
                 color: var(--blue-color);
             }
         }
     }
 
-    &-item.white{
-        
-        .info-item__wrapper{
+    &-item.white {
+
+        .info-item__wrapper {
             background: var(--orange-color) url("../../assets/images/white-bg.png") no-repeat center;
             background-size: cover;
         }
 
-        .info-item__title, .info-item__text{
+        .info-item__title,
+        .info-item__text {
             color: var(--blue-color);
         }
 
-        .info-item__link{
+        .info-item__link {
             background-color: #fff;
             color: var(--blue-color);
 
-            &:hover{
+            &:hover {
                 background-color: var(--orange-color);
                 color: #fff;
             }
         }
     }
 
-    &-item.orange{
+    &-item.orange {
         background: var(--orange-color) url("../../assets/images/building-item-bg.jpg") no-repeat center;
         background-size: cover;
 
-        .info-item__wrapper{
+        .info-item__wrapper {
             background-color: var(--light-orange-color);
         }
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    .info{
-        &-img{
+    .info {
+        &-img {
             flex-basis: 40%;
         }
 
-        &-wrapper{
+        &-wrapper {
             flex-basis: 60%;
         }
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .info{
+    .info {
         flex-direction: column;
 
-        &.reverse{
+        &.reverse {
             flex-direction: column;
         }
 
-        &-img{
+        &-img {
             flex-basis: 100%;
         }
 
-        &-wrapper{
+        &-wrapper {
             flex-basis: 100%;
         }
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .info{
-        &-wrapper{
+    .info {
+        &-wrapper {
             flex-direction: column;
         }
     }

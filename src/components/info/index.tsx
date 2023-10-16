@@ -23,11 +23,14 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
               width={99}
               height={99}
             />
-            <h2 className="info-item__title">DEMOLISH WITH NEW TECHNOLOGY.</h2>
+            <h2 className="info-item__title">Betascaffolding Structure </h2>
             <p className="info-item__text">
-              Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do
-              eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en
-              im ad minim veniam, quis nostrud.
+              We craft our scaffolding structures using materials that meet the
+              most stringent industry standards for top-notch quality. Every
+              scaffolding structure we create undergoes regular, meticulous
+              inspections to ensure it remains free from defects and maintains
+              its unyielding strength. When it comes to scaffolding in London
+              takes the crown as the unrivaled leader.
             </p>
             <Link className="info-item__link" to="/services">
               +
@@ -43,11 +46,15 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
               width={99}
               height={99}
             />
-            <h2 className="info-item__title">DEMOLISH WITH NEW TECHNOLOGY.</h2>
+            <h2 className="info-item__title">Scaffolding Design</h2>
             <p className="info-item__text">
-              Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do
-              eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut en
-              im ad minim veniam, quis nostrud.
+              We take boundless pride in each and every project we embark upon
+              for our esteemed clients. Our commitment is unwavering, ensuring
+              that each job and project is executed with unparalleled perfection
+              and the highest standards of quality. When we take on a contract,
+              our first step is to conduct an onsite visit to meticulously
+              prepare a tailor-made scaffolding design, setting the stage for
+              excellence.
             </p>
             <Link className="info-item__link" to="/services">
               +

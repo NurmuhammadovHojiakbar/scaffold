@@ -5,7 +5,7 @@ const ContactTouch = () => {
     <section className="contact-touch">
       <div className="container contact-touch__container">
         <h3 className="title-sm contact-touch__title">Let's talk</h3>
-        <h2 className="title-lg contact-touch__heading">Get in touch</h2>
+        <h2 className="title-lg contact-touch__heading">Let's Discuss Your Project Today</h2>
 
         <form className="contact-touch__form">
           <div className="contact-touch__form-wrapper">
