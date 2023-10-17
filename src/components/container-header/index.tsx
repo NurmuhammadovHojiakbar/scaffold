@@ -1,17 +1,21 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./container.scss";
 
 type PropType = {
   title: string;
-  links: undefined;
+  links?: {
+    id: number;
+    path?: string;
+    title: string;
+  }[];
 };
 
-const ContainerHeader = ({ title, links }: PropType) => {
+const ContainerHeader = ({ title }: PropType) => {
   return (
     <header className="container-header">
       <div className="container container-header__container">
         <h2 className="container-header__title">{title}</h2>
-        <div className="container-header__links">
+        {/* <div className="container-header__links">
           {links ? (
             <ul className="container-header__list">
               {links?.map((link) => (
@@ -31,7 +35,7 @@ const ContainerHeader = ({ title, links }: PropType) => {
           ) : (
             <div></div>
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );

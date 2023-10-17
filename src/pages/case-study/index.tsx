@@ -14,7 +14,7 @@ const CaseStudy = () => {
     },
   ];
   return (
-    <Container title="Case Study" headerTitle="">
+    <Container title="Case Study" headerTitle="" linksList={links}>
       <CaseStudyList />
     </Container>
   );

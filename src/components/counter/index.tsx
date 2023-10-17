@@ -84,9 +84,9 @@ const Counter = ({
               >
                 {stat.title}
               </h2>
-              <p className="counter-item__text" style={{ color: detailsColor }}>
+              {/* <p className="counter-item__text" style={{ color: detailsColor }}>
                 {stat.desc}
-              </p>
+              </p> */}
             </li>
           ))}
         </ul>

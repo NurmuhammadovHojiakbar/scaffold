@@ -58,7 +58,7 @@ const About = () => {
     },
   ];
   return (
-    <Container title="" headerTitle="">
+    <Container title="" headerTitle="" linksList={links}>
       <AboutInfo />
       <Info itemClass="white" wrapperClass="reverse" />
       <AboutServices />

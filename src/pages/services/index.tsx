@@ -121,7 +121,7 @@ const Services = () => {
   };
 
   return (
-    <Container title="Services" headerTitle="">
+    <Container title="Services" headerTitle="" linksList={links}>
       <ServicesList />
       {/* <PricePlans /> */}
       <h1

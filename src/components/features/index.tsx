@@ -6,7 +6,7 @@ type PropType = {
   data: {
     id: number;
     title: string;
-    text: string;
+    text?: string;
     class: string;
   }[];
 };
