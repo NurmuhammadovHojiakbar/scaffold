@@ -1,7 +1,7 @@
 .features {
     position: relative;
     padding: 120px 0;
-    background: url("../../assets/images/main-image-contact.jpeg") no-repeat center;
+    background: url("../../assets/images/feature-bg.jpg") no-repeat center;
     background-size: cover;
 
     &-title {
@@ -72,17 +72,52 @@
                 transform: translate(-50%, -50%);
             }
 
-            &.beam::before {
+            &.one::before {
                 width: 50px;
                 height: 50px;
-                background: url("../../assets/images/beam.png") no-repeat center;
+                background: url("../../assets/images/number-1.png") no-repeat center;
+                background-size: contain;
+            }
+
+            &.two::before {
+                width: 50px;
+                height: 50px;
+                background: url("../../assets/images/number-two.png") no-repeat center;
+                background-size: contain;
+            }
+
+            &.three::before {
+                width: 50px;
+                height: 50px;
+                background: url("../../assets/images/number-3.png") no-repeat center;
+                background-size: contain;
+            }
+
+            &.four::before {
+                width: 50px;
+                height: 50px;
+                background: url("../../assets/images/number-4.png") no-repeat center;
+                background-size: contain;
+            }
+
+            &.five::before {
+                width: 50px;
+                height: 50px;
+                background: url("../../assets/images/circle-5.png") no-repeat center;
                 background-size: contain;
             }
 
             &.hammer::before {
                 width: 35px;
                 height: 35px;
-                background: url("../../assets/images/hammer.png") no-repeat center;
+                background: url("../../assets/images/scaffolding.png") no-repeat center;
+                background-size: contain;
+            }
+
+            &.beam::before {
+                width: 45px;
+                height: 45px;
+                background: url("../../assets/images/constructor.png") no-repeat center;
                 background-size: contain;
             }
 

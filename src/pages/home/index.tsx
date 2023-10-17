@@ -13,6 +13,7 @@ import SafeImg from "@/assets/images/safeguard.png";
 import Counter from "@/components/counter";
 import { AboutUs, Hero, News } from "@/components/home";
 import { CaseStudySlider } from "@/components/case-study";
+import { ContactTouch } from "@/components/contact";
 
 const Home = () => {
   const contractList = useMemo(
@@ -51,20 +52,36 @@ const Home = () => {
   const features = [
     {
       id: 1,
-      title:
-        "We have a spotless track-record with customers and clients across a range of industry Verticals/Services in multiple locations.",
-      text: `1)All our scaffolders are trained and certified
-      2)Satisfaction guaranteed on every project
-      3)Residential and Commercial services
-      4) 15 Years of Combined Experience
-      5) All types of extensions`,
-      class: "beam",
+      title: "All our scaffolders are trained and certified",
+      // { title: "2)Satisfaction guaranteed on every project" },
+      // { title: "3)Residential and Commercial services" },
+      // { title: " 4) 15 Years of Combined Experience" },
+      // { title: " 5) All types of extensions" },
+      class: "one",
     },
     {
-      id: 2,
-      title: "High-Quality Scaffolding",
-      text: "Quality is the cornerstone of our scaffolding services. We use only the finest materials that adhere to the industry's highest standards. Our scaffolding structures are not only sturdy and secure but also designed to meet the specific needs of your project. Whether it's for new construction, maintenance, or any other application, our scaffolding is engineered for excellence and safety.",
-      class: "hammer",
+      id: 1,
+      title: "Satisfaction guaranteed on every project",
+      // { title: "2)Satisfaction guaranteed on every project" },
+      // { title: "3)Residential and Commercial services" },
+      // { title: " 4) 15 Years of Combined Experience" },
+      // { title: " 5) All types of extensions" },
+      class: "two",
+    },
+    {
+      id: 3,
+      title: "Residential and Commercial services",
+      class: "three",
+    },
+    {
+      id: 4,
+      title: "15 Years of Combined Experience",
+      class: "four",
+    },
+    {
+      id: 4,
+      title: "All types of extensions",
+      class: "five",
     },
   ];
 
@@ -75,15 +92,18 @@ const Home = () => {
       <Features
         data={features}
         title={
-          "Trusted Scaffolding Services in London Range of Projects, Certified Scaffolders, 10 Years Experience"
+          "WE HAVE A SPOTLESS TRACK-RECORD WITH CUSTOMERS AND CLIENTS ACROSS A RANGE OF INDUSTRY VERTICALS/SERVICES IN MULTIPLE LOCATIONS."
         }
       />
+      <h1 className="trustet-title title-lg container container-sm features-container">
+        Trusted companies
+      </h1>
       <Contract color="white" sliders={contractList} />
       <CaseStudySlider />
       <Info />
       <Counter
-        title="OUR WORKS"
-        heading={`Browse Our Recent Proudly  <br /> Completed Projects.`}
+        // title="OUR WORKS"
+        heading={`Explore Our Remarkable Achievements   in <br />  the   Scaffolding Industry.`}
         trackColor="#314d79"
         color="#ff5e14"
         textColor="#ff5e14"
@@ -92,6 +112,7 @@ const Home = () => {
         titleColor="#f4f4f4"
       />
       <News />
+      <ContactTouch />
     </Page>
   );
 };

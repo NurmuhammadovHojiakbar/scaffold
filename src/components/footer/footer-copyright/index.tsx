@@ -2,9 +2,13 @@ const FooterCopyright = () => {
   return (
     <section className="footer-copyright">
       <div className="container footer-copyright__container">
-        <p className="footer-copyright__text">
-          Copyright ©2023. Wemard. All Rights Reserved
-        </p>
+        <a
+          href="https://instagram.com/wemard.uz?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+          target="_blank"
+          className="footer-copyright__text"
+        >
+          Betascaffolding 2023 Developed by Wemard
+        </a>
       </div>
     </section>
   );

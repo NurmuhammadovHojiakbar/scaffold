@@ -4,10 +4,20 @@ const ContactTouch = () => {
   return (
     <section className="contact-touch">
       <div className="container contact-touch__container">
-        <h3 className="title-sm contact-touch__title">Let's talk</h3>
-        <h2 className="title-lg contact-touch__heading">Let's Discuss Your Project Today</h2>
+        {/* <h3 className="title-sm contact-touch__title">Let's talk</h3> */}
+        <h2
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="title-lg contact-touch__heading"
+        >
+          Let's Discuss Your Project Today
+        </h2>
 
-        <form className="contact-touch__form">
+        <form
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="contact-touch__form"
+        >
           <div className="contact-touch__form-wrapper">
             <label className="contact-touch__form-label">
               <input

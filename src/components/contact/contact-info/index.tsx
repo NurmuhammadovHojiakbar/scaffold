@@ -23,7 +23,11 @@ const ContactInfo = () => {
   ];
   return (
     <section className="contact-info">
-      <div className="container contact-info__container">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        className="container contact-info__container"
+      >
         <div className="contact-info__details">
           <h3 className="title-sm contact-info__title">Contact Us</h3>
           <h2 className="title-lg contact-info__heading">Get In Touch</h2>

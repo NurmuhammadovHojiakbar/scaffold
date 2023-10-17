@@ -12,14 +12,14 @@ const BlogContainer = ({ children }: PropType) => {
   return (
     <div className="blog">
       <div className="container container-sm blog-container">
+        <BlogSearch />
         <section className="blog-wrapper">{children}</section>
         <aside className="blog-aside">
-          <BlogSearch />
-          <BlogRecent />
-          <BlogCategory />
-          <BlogTags />
+          {/* <BlogRecent /> */}
+          {/* <BlogCategory /> */}
+          {/* <BlogTags /> */}
           <div className="ad-banner">
-            <img className="ad-banner__img" src={AdImg} alt="Ad" />
+            {/* <img className="ad-banner__img" src={AdImg} alt="Ad" /> */}
           </div>
         </aside>
       </div>

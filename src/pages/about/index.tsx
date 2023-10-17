@@ -58,10 +58,13 @@ const About = () => {
     },
   ];
   return (
-    <Container title="About" linksList={links} headerTitle="About">
+    <Container title="" headerTitle="">
       <AboutInfo />
       <Info itemClass="white" wrapperClass="reverse" />
       <AboutServices />
+      <h1 className="trustet-title title-lg container container-sm features-container">
+        Trusted companies
+      </h1>
       <Contract sliders={sponsors} />
     </Container>
   );

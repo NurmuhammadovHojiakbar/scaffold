@@ -6,7 +6,11 @@ const AboutInfo = () => {
   return (
     <section className="about-info">
       <div className="container container-sm about-info__container">
-        <div className="about-info__wrapper">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="about-info__wrapper"
+        >
           <img
             className="about-info__wrapper-img"
             src={AboutImg1}
@@ -14,18 +18,22 @@ const AboutInfo = () => {
           />
           <img
             className="about-info__wrapper-worker-img"
-            src={AboutImg2} 
+            src={AboutImg2}
             alt="Worker"
           />
         </div>
-        <div className="about-info__details">
-          <h3 className="title-sm about-info__details-title">About Us</h3>
+        <div data-aos="fade-left" className="about-info__details">
+          {/* <h3 className="title-sm about-info__details-title">About Us</h3> */}
           <h2 className="title-lg about-info__details-heading">
-          Betascaffolding  London's Premier Scaffolding Partner 
+            Betascaffolding London's Premier Scaffolding Partner
           </h2>
           <p className="about-info__details-text">
-          At Betascaffolding, we are London's top-rated scaffolders, dedicated to providing high-quality scaffolding and exceptional services. With a wealth of experience, our expert team delivers tailored, safe, and timely scaffolding solutions for your diverse projects. Choose Betascaffolding for excellence from start to finish. Your project deserves the best.
-
+            At Betascaffolding, we are London's top-rated scaffolders, dedicated
+            to providing high-quality scaffolding and exceptional services. With
+            a wealth of experience, our expert team delivers tailored, safe, and
+            timely scaffolding solutions for your diverse projects. Choose
+            Betascaffolding for excellence from start to finish. Your project
+            deserves the best.
           </p>
           <Experience />
         </div>

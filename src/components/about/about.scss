@@ -67,6 +67,16 @@
             font-weight: 700;
         }
 
+        &-heading {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 50px;
+            text-align: left;
+            text-transform: uppercase;
+            color: var(--blue-color);
+            font-weight: 700;
+        }
+
         &-text {
             margin: 0;
             font-size: 16px;
@@ -107,6 +117,7 @@
     }
 
     &__wrapper {
+
         position: relative;
         max-width: 50%;
         width: 100%;

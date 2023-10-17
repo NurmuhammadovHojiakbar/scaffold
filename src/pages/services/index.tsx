@@ -121,11 +121,25 @@ const Services = () => {
   };
 
   return (
-    <Container title="Services" linksList={links} headerTitle="Services">
+    <Container title="Services" headerTitle="">
       <ServicesList />
       {/* <PricePlans /> */}
+      <h1
+        style={{
+          marginTop: "0",
+          paddingTop: "0",
+          marginBottom: "80px",
+        }}
+        className="trustet-title title-lg container container-sm features-container"
+      >
+        Our services
+      </h1>
       <div className="container services container-sm about-us__container">
-        <ul className="about-us__list">
+        <ul
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          className="about-us__list"
+        >
           {needs.map((el) => (
             <li className="about-us__item" key={el.id}>
               <h2 className="about-us__item-heading">0{el.id}</h2>

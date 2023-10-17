@@ -145,7 +145,7 @@ svg {
 .title-lg {
   font-size: 60px;
   line-height: 70px;
-  color: var(--button-color);
+  color: var(--blue-color);
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -167,6 +167,7 @@ svg {
   text-transform: uppercase;
   color: var(--blue-color);
   // border: none;
+  border-radius: 16px;
   outline: none;
   border: 1px solid var(--blue-color);
   background-color: white;

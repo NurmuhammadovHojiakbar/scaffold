@@ -10,28 +10,28 @@ const FooterTop = () => {
     () => [
       {
         id: 1,
-        name: "Chemical Engineering Projects",
+        name: "About",
       },
       {
         id: 2,
-        name: "Mining Engineering Construction",
+        name: "SERVICES",
       },
       {
         id: 3,
-        name: "Engineering Welding Engineering",
+        name: "SERVICE STUDY",
       },
       {
         id: 4,
-        name: "Welding Engineering",
+        name: "Blog",
       },
-      {
-        id: 5,
-        name: "Space Program XYZ",
-      },
-      {
-        id: 6,
-        name: "ReConstructions",
-      },
+      // {
+      //   id: 5,
+      //   name: "Space Program XYZ",
+      // },
+      // {
+      //   id: 6,
+      //   name: "ReConstructions",
+      // },
     ],
     []
   );
@@ -64,9 +64,12 @@ const FooterTop = () => {
         <div className="footer-top__container-child footer-top__info">
           <h2 className="footer-top__title footer-top__info-title">About Us</h2>
           <p className="footer-top__context footer-top__info-about">
-            Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do
-            eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris.
+            At Betascaffolding, we are London's top-rated scaffolders, dedicated
+            to providing high-quality scaffolding and exceptional services. With
+            a wealth of experience, our expert team delivers tailored, safe, and
+            timely scaffolding solutions for your diverse projects. Choose
+            Betascaffolding for excellence from start to finish. Your project
+            deserves the best.
           </p>
           <div className="footer-top__opening">
             <img
@@ -91,7 +94,7 @@ const FooterTop = () => {
         </div>
         <div className="footer-top__container-child footer-top__services">
           <h2 className="footer-top__title footer-top__services-title">
-            Our Services
+            Our Menu
           </h2>
           <ul className="footer-top__services-list">
             {services.map((serv) => (

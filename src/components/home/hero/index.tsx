@@ -32,7 +32,7 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="site-hero">
+    <section data-aos="fade-down" className="site-hero">
       <Swiper
         navigation={true}
         autoplay={{ delay: 8000, disableOnInteraction: false }}

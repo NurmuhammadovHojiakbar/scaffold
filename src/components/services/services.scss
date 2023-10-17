@@ -1,9 +1,9 @@
-.price-plans{
+.price-plans {
     position: relative;
     padding: 120px 0;
     background-color: var(--light-pink-color);
 
-    &__title{
+    &__title {
         position: absolute;
         top: 0;
         left: 50%;
@@ -17,42 +17,42 @@
         line-height: 1;
     }
 
-    &__container{
+    &__container {
         position: relative;
         z-index: 1;
 
-        &-title{
+        &-title {
             text-align: center;
         }
-        
-        &-heading{
+
+        &-heading {
             text-align: center;
             margin-bottom: 60px;
         }
     }
 
-    &__list{
+    &__list {
         display: flex;
         align-items: flex-start;
     }
 
-    &__item{
+    &__item {
         padding: 70px 50px 65px;
         background-color: #fff;
         -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.06);
         box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.06);
         text-align: center;
 
-        &.active{
+        &.active {
             border-top: 6px solid var(--orange-color);
             padding: 95px 50px;
         }
 
-        &-type{
+        &-type {
             margin-bottom: 18px;
         }
 
-        &-title{
+        &-title {
             font-size: 40px;
             text-transform: capitalize;
             margin-top: 0;
@@ -60,7 +60,7 @@
             color: var(--blue-color);
         }
 
-        &-text{
+        &-text {
             font-size: 16px;
             line-height: 29px;
             margin-top: 0;
@@ -68,20 +68,20 @@
             color: var(--blue-color);
         }
 
-        &-img{
+        &-img {
             margin-bottom: 35px;
         }
 
-        &-price{
+        &-price {
             margin-top: 0;
             margin-bottom: 25px;
- 
-            &-symbol{
-               font-size: 24px;
-               color: var(--blue-color); 
+
+            &-symbol {
+                font-size: 24px;
+                color: var(--blue-color);
             }
 
-            &-number{
+            &-number {
                 font-size: 80px;
                 font-weight: bold;
                 letter-spacing: -2px;
@@ -89,44 +89,44 @@
             }
         }
 
-        &-link{
+        &-link {
             color: var(--orange-color);
         }
     }
 }
 
 
-.services-list{
+.services-list {
     padding: 120px 0;
 
-    &__list{
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 30px;
     }
 
-    &__item{
+    &__item {
         flex-basis: calc(33% - 20px);
 
-        &-wrapper{
+        &-wrapper {
             display: flex;
             height: 250px;
             overflow: hidden;
             margin-bottom: 30px;
         }
 
-        &-wrapper:hover &-img{
+        &-wrapper:hover &-img {
             transform: scale(1.1);
         }
 
-        &-img{
+        &-img {
             flex-grow: 1;
             object-fit: cover;
             transition: 0.3s ease;
         }
 
-        &-title{
+        &-title {
             font-size: 25px;
             line-height: 28px;
             margin-top: 0;
@@ -134,8 +134,8 @@
             color: var(--blue-color);
         }
 
-        &-desc{
-            p{
+        &-desc {
+            p {
                 margin: 0;
                 color: var(--blue-color);
                 font-size: 16px;
@@ -147,19 +147,19 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .price-plans{
-        &__list{
+    .price-plans {
+        &__list {
             flex-wrap: wrap;
             justify-content: center;
             align-items: stretch;
             gap: 30px;
         }
 
-        &__item{
+        &__item {
             flex-basis: calc(50% - 15px);
             border-top: 6px solid var(--orange-color);
-            
-            &.active{
+
+            &.active {
                 padding: 70px 50px 65px;
             }
         }
@@ -167,16 +167,16 @@
 }
 
 @media only screen and (max-width: 1050px) {
-    .services-list{
-        &__item{
+    .services-list {
+        &__item {
             flex-basis: calc(50% - 15px);
         }
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .price-plans{
-        &__title{
+    .price-plans {
+        &__title {
             font-size: 180px;
             transform: translate(-50%, -18px);
         }
@@ -184,28 +184,28 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .price-plans{
+    .price-plans {
         padding: 80px 0;
 
-        &__title{
+        &__title {
             font-size: 100px;
             transform: translate(-50%, -10px);
         }
 
-        &__list{
+        &__list {
             flex-direction: column;
         }
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .services-list{
+    .services-list {
 
-        &__list{
+        &__list {
             justify-content: center;
         }
 
-        &__item{
+        &__item {
             max-width: 400px;
             width: 100%;
             flex-basis: unset;
@@ -215,14 +215,14 @@
 
 
 @media only screen and (max-width: 450px) {
-    .price-plans{
-        &__title{
+    .price-plans {
+        &__title {
             font-size: 80px;
             transform: translate(-50%, -8px);
         }
 
-        &__container{
-            &-heading.title-lg{
+        &__container {
+            &-heading.title-lg {
                 font-size: 40px;
                 line-height: 48px;
             }

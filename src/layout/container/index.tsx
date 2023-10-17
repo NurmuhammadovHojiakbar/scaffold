@@ -7,7 +7,7 @@ type PropType = {
   title: string;
   children: React.ReactNode;
   headerTitle: string;
-  linksList: { title: string; path?: string; id: number }[];
+  linksList: undefined;
 };
 
 const Container = ({ title, children, headerTitle, linksList }: PropType) => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import LogoImg from "@/assets/images/logo.png";
+import LogoImg from "@/assets/images/001.png";
 import { HumOpenIcon } from "@/components/icons";
 import MobileNavigation from "../mobile-navigation";
 import useWindowScroll from "@/hooks/use-window-scroll";

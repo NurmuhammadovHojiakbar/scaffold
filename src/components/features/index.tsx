@@ -8,15 +8,35 @@ const Features = ({ title, data }) => {
       <div className="container container-sm features-container">
         <div className="features-wrapper">
           <h3 className="title-sm features-wrapper__title">Core Features</h3>
-          <h2 className="title-lg features-wrapper__heading">{title}</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="title-lg features-wrapper__heading"
+          >
+            {title ? title : null}
+          </h2>
 
-          <ul className="features-list">
+          <ul
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="features-list"
+          >
             {data.map((fet) => (
               <li className="features-item" key={fet.id}>
                 <div className={`features-item__img ${fet.class}`}></div>
                 <div className="features-item__detail">
                   <h3 className="features-item__title">{fet.title}</h3>
-                  <p className="features-item__text">{fet.text}</p>
+                  <p className="features-item__text">
+                    {Array.isArray(fet.text) ? (
+                      <ul>
+                        {fet.text.map((item, index) => (
+                          <li key={index}>{item.title}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{fet.text}</p>
+                    )}
+                  </p>
                 </div>
               </li>
             ))}

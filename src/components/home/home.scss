@@ -10,7 +10,7 @@
     }
 
     &__header {
-        display: flex;
+        display: block;
         align-items: center;
         gap: 30px;
         margin-bottom: 60px;
@@ -22,28 +22,30 @@
 
         &-heading {
             margin-bottom: 0;
-            font-size: 45px !important;
-            text-align: left;
+            font-size: 40px !important;
+            text-align: center;
         }
 
         &-text {
             position: relative;
             flex-basis: calc(50% - 15px);
             padding: 0 35px;
+            text-align: center;
             margin: 0;
             font-size: 18px;
             line-height: 28px;
             color: var(--blue-color);
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 2px;
-                height: 120px;
-                background-color: #e4e4e4;
-            }
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 2px;
+            //     height: 120px;
+            //     background-color: #e4e4e4;
+            // }
         }
     }
 
@@ -292,12 +294,14 @@
     }
 
     &-button.white {
-        background: #fff;
+        // background: #fff;
+        background-color: var(--blue-color);
+        border-radius: 12px;
         padding: 20px 50px;
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
-        color: #00235a;
+        color: white;
         -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
         box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
         transition: 0.3s ease;
@@ -312,9 +316,9 @@
 .swiper-button-prev {
     width: 80px !important;
     height: 80px !important;
-    background: #fff url("../../assets/images/left-arrow.png") no-repeat center;
-    -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
-    box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+    background: url("../../assets/images/left-arrow.png") no-repeat center;
+    // -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+    // box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
     left: 0 !important;
 
     &::after {
@@ -325,9 +329,9 @@
 .swiper-button-next {
     width: 80px;
     height: 80px;
-    background: #fff url("../../assets/images/right-arrow.png") no-repeat center;
-    -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
-    box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+    background: url("../../assets/images/right-arrow.png") no-repeat center;
+    // -webkit-box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+    // box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
     right: 0 !important;
 
     &::after {
@@ -430,4 +434,9 @@
             }
         }
     }
+}
+
+.trustet-title {
+    padding-top: 70px;
+    text-align: left;
 }

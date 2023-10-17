@@ -50,13 +50,19 @@ const AboutUs = () => {
   };
   return (
     <section className="about-us">
-      <div className="about-us__wrapper">
+      <div
+        style={{
+          paddingTop: "50px",
+        }}
+        data-aos="fade-left"
+        className="about-us__wrapper"
+      >
         <Experience />
       </div>
       <div className="container container-sm about-us__container">
-        <header className="about-us__header">
+        <header data-aos="fade-left" className="about-us__header">
           <div className="about-us__header-wrapper">
-            <h3 className="title-sm about-us__header-title">About Us</h3>
+            {/* <h3 className="title-sm about-us__header-title">About Us</h3> */}
             <h2 className="title-lg about-us__header-heading">
               Welcome to Betascaffolding
               <br /> Your Trusted Partner for Scaffolding Solutions
@@ -68,7 +74,7 @@ const AboutUs = () => {
             call us anytime.
           </p>
         </header>
-        <ul className="about-us__list">
+        <ul data-aos="zoom-in" className="about-us__list">
           {needs.map((el) => (
             <li className="about-us__item" key={el.id}>
               <h2 className="about-us__item-heading">0{el.id}</h2>

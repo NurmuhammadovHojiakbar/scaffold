@@ -9,7 +9,7 @@
         min-height: 500px;
         flex-basis: 50%;
         background: url("../../assets/images/about-main-image.jpeg") no-repeat center;
-        background-size: auto;
+        background-size: cover;
     }
 
     &-wrapper {
@@ -47,14 +47,19 @@
             color: #fff;
             margin-top: 0;
             margin-bottom: 16px;
+
+            &.bottom {
+                margin-bottom: 46px;
+            }
         }
 
         &__link {
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 50px;
+            width: 100%;
             height: 50px;
+            border-radius: 12px;
             border: 1px solid #fff;
             color: #fff;
             transition: 0.3s ease;

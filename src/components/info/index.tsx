@@ -1,6 +1,6 @@
 import BuildingImg from "@/assets/images/building.png";
-import BuildingWhiteImg from "@/assets/images/building-white.png";
-import PainterImg from "@/assets/images/painter.png";
+import BuildingWhiteImg from "@/assets/images/scaffolding.png";
+import PainterImg from "@/assets/images/stairs.png";
 import { Link } from "react-router-dom";
 import "./info.scss";
 
@@ -11,7 +11,11 @@ type PropTypes = {
 
 const Info = ({ itemClass, wrapperClass }: PropTypes) => {
   return (
-    <section className={`info ${wrapperClass ? wrapperClass : ""}`}>
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      className={`info ${wrapperClass ? wrapperClass : ""}`}
+    >
       <div className="info-img"></div>
       <div className="info-wrapper">
         <div className={`info-item ${itemClass ? itemClass : ""}`}>
@@ -33,7 +37,7 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
               takes the crown as the unrivaled leader.
             </p>
             <Link className="info-item__link" to="/services">
-              +
+              Learn more
             </Link>
           </div>
         </div>
@@ -47,7 +51,7 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
               height={99}
             />
             <h2 className="info-item__title">Scaffolding Design</h2>
-            <p className="info-item__text">
+            <p className="info-item__text bottom">
               We take boundless pride in each and every project we embark upon
               for our esteemed clients. Our commitment is unwavering, ensuring
               that each job and project is executed with unparalleled perfection
@@ -57,7 +61,7 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
               excellence.
             </p>
             <Link className="info-item__link" to="/services">
-              +
+              Learn more
             </Link>
           </div>
         </div>

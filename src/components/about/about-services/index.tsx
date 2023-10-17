@@ -1,6 +1,7 @@
-import Process1 from "@/assets/images/tools.png";
-import Process2 from "@/assets/images/painter-blue.png";
-import Process3 from "@/assets/images/building-white.png";
+import Process1 from "@/assets/images/one-number.png";
+import Process2 from "@/assets/images/two-number.png";
+import Process3 from "@/assets/images/three-number.png";
+import Process4 from "@/assets/images/four-number.png";
 
 const AboutServices = () => {
   const services = [
@@ -18,13 +19,13 @@ const AboutServices = () => {
     },
     {
       id: 3,
-      img: Process2,
+      img: Process3,
       title: "Timely Execution",
       text: "We understand that time is of the essence. Our efficiency and punctuality are second to none, ensuring your project stays on schedule",
     },
     {
       id: 4,
-      img: Process3,
+      img: Process4,
       title: "Clear Communication",
       text: "Our transparent communication ensures you are always in the loop, from project planning to completion. We keep you informed and engaged throughout the process.",
     },
@@ -37,7 +38,11 @@ const AboutServices = () => {
         <h2 className="title-lg about-services__container-heading">
           What we do
         </h2>
-        <div className="about-services__wrapper">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="about-services__wrapper"
+        >
           <ul className="about-services__list">
             {services.map((serv) => (
               <li className="about-services__item">
@@ -48,6 +53,8 @@ const AboutServices = () => {
                   width={70}
                   height={70}
                 />
+                {/* <h4 className="about-services__item-heading">{serv.id}</h4> */}
+
                 <h4 className="about-services__item-title">{serv.title}</h4>
                 <p className="about-services__item-text">{serv.text}</p>
               </li>

@@ -8,7 +8,11 @@ const News = () => {
   return (
     <section className="news">
       <h2 className="news-title">News</h2>
-      <div className="container container-sm news-container">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        className="container container-sm news-container"
+      >
         <h3 className="title-sm news-container__title">News & Feeds</h3>
         <h2 className="title-lg news-container__heading">News & Every Feeds</h2>
 

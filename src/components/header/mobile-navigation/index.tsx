@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { HumCloseIcon, MailIcon, MapIcon, PhoneIcon } from "@/components/icons";
-import LogoImg from "@/assets/images/logo.png";
+import LogoImg from "@/assets/images/001.png";
 
 type PropType = {
   navList: {

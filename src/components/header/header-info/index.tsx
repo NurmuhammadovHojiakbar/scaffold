@@ -16,17 +16,17 @@ const HeaderInfo = ({ socialList }: PropType) => {
         <div className="header-info__contact">
           <Link
             className="header-info__contact-link header-info__contact-email"
-            to="mailto:info@webmail.com"
+            to="mailto:betascaffolding@outlook.com"
           >
             <MailIcon className="header-info__contact-icon" />
-            <span>info@webmail.com</span>
+            <span>betascaffolding@outlook.com</span>
           </Link>
           <Link
             className="header-info__contact-link header-info__contact-tel"
-            to="tel:+876864764764"
+            to="tel:+44 7436 659526"
           >
             <PhoneIcon className="header-info__contact-icon" />
-            <span>+876 864 764 764</span>
+            <span>+44 7436 659526</span>
           </Link>
         </div>
         <div className="header-info__right">

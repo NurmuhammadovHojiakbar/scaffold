@@ -25,32 +25,33 @@ const Counter = ({
   const stats = [
     {
       id: 1,
-      title: "Project done",
-      desc: "Construction Simulator",
+      title: "Projects done",
       procent: 300,
     },
     {
       id: 2,
       title: "Happy clients",
-      desc: "Construction Simulator",
       procent: 96,
     },
     {
       id: 3,
-      title: "Completed co.",
-      desc: "Construction Simulator",
+      title: "Completed on time",
       procent: 97,
     },
     {
       id: 4,
-      title: "Country cover",
-      desc: "Construction Simulator",
+      title: "Quality of services ",
       procent: 99,
     },
   ];
 
   return (
-    <section className="counter" style={{ backgroundColor: bgColor }}>
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      className="counter"
+      style={{ backgroundColor: bgColor }}
+    >
       <h2
         className="counter-title"
         style={{ WebkitTextStrokeColor: titleColor }}

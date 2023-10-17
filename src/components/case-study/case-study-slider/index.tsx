@@ -10,13 +10,16 @@ const CaseStudySlider = () => {
   return (
     <div className="projects-slider">
       <h2 className="projects-slider__title">Projects</h2>
-      <div className="container container-sm projects-slider__container">
-        <h3 className="title-sm projects-slider__container-title">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="container container-sm projects-slider__container"
+      >
+        {/* <h3 className="title-sm projects-slider__container-title">
           Case Study
-        </h3>
+        </h3> */}
         <h2 className="title-lg projects-slider__container-heading">
-          Explore Our Remarkable Achievements in the
-          <br /> Scaffolding Industry
+          Browse Our Recent Proudly <br /> Completed Projects
         </h2>
 
         <div className="project-slider__wrapper">
