@@ -6,7 +6,7 @@ type PropType = {
   color: string;
   trackColor: string;
   textColor: string;
-  text: string;
+  text?: string;
 };
 
 const Chart = ({ color, percent, trackColor, textColor, text }: PropType) => {

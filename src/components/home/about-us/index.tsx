@@ -43,9 +43,9 @@ const AboutUs = () => {
         "Place your trust in the time-honored legacy of London scaffolding, distinguished by its unwavering commitment to impeccable work processes, stringent quality control, top-tier services and equipment, rigorous health and safety standards, comprehensive training, and cutting-edge technology.",
     },
   ];
-  const [expandedItem, setExpandedItem] = useState(null);
+  const [expandedItem, setExpandedItem] = useState<null | number>(null);
 
-  const handleShowMore = (itemId) => {
+  const handleShowMore = (itemId: null | number) => {
     setExpandedItem(itemId === expandedItem ? null : itemId);
   };
   return (
