@@ -1,8 +1,8 @@
-import BlogCategory from "../aside/categories";
-import BlogRecent from "../aside/recent-blogs";
+// import BlogCategory from "../aside/categories";
+// import BlogRecent from "../aside/recent-blogs";
 import BlogSearch from "../aside/search";
-import BlogTags from "../aside/tags";
-import AdImg from "@/assets/images/ad-banner.jpg";
+// import BlogTags from "../aside/tags";
+// import AdImg from "@/assets/images/ad-banner.jpg";
 
 type PropType = {
   children: React.ReactNode;

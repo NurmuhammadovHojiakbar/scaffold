@@ -10,10 +10,11 @@ import Sponsor5 from "@/assets/images/sponsor-5.png";
 import Sponsor6 from "@/assets/images/sponsor-6.png";
 import Sponsor7 from "@/assets/images/sponsor-7.png";
 import { ServicesList } from "@/components/services";
-import HelmetImg from "@/assets/images/helmet.png";
-import SawMachineImg from "@/assets/images/cutting-machine.png";
-import ToolsImg from "@/assets/images/repair-tools.png";
-import DrillImg from "@/assets/images/driller.png";
+import HelmetImg from "@/assets/images/one-number.png";
+import SawMachineImg from "@/assets/images/two-number.png";
+import ToolsImg from "@/assets/images/three-number.png";
+import DrillImg from "@/assets/images/four-number.png";
+import DrillImg2 from "@/assets/images/five.png";
 import Counter from "@/components/counter";
 import "./services.scss";
 
@@ -82,23 +83,23 @@ const Services = () => {
     },
     {
       id: 4,
-      img: DrillImg,
+      img: DrillImg2,
       text: "Temporary Roofing",
       title:
         "Place your trust in the time-honored legacy of London scaffolding, distinguished by its unwavering commitment to impeccable work processes, stringent quality control, top-tier services and equipment, rigorous health and safety standards, comprehensive training, and cutting-edge technology.",
     },
   ];
-  const links = [
-    {
-      id: 1,
-      path: "/",
-      title: "Home",
-    },
-    {
-      id: 2,
-      title: "Services",
-    },
-  ];
+  // const links = [
+  //   {
+  //     id: 1,
+  //     path: "/",
+  //     title: "Home",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Services",
+  //   },
+  // ];
   const features = [
     {
       id: 1,

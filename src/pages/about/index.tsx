@@ -46,17 +46,17 @@ const About = () => {
     []
   );
 
-  const links = [
-    {
-      id: 1,
-      path: "/",
-      title: "Home",
-    },
-    {
-      id: 2,
-      title: "About",
-    },
-  ];
+  // const links = [
+  //   {
+  //     id: 1,
+  //     path: "/",
+  //     title: "Home",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "About",
+  //   },
+  // ];
   return (
     <Container title="" headerTitle="">
       <AboutInfo />

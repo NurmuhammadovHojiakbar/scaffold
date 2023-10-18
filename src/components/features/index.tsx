@@ -6,7 +6,7 @@ type PropType = {
   data: {
     id: number;
     title: string;
-    text: string;
+    // text: string;
     class: string;
   }[];
 };
@@ -17,7 +17,7 @@ const Features = ({ title, data }: PropType) => {
       <h2 className="features-title">Features</h2>
       <div className="container container-sm features-container">
         <div className="features-wrapper">
-          <h3 className="title-sm features-wrapper__title">Core Features</h3>
+          {/* <h3 className="title-sm features-wrapper__title">Core Features</h3> */}
           <h2
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
@@ -36,7 +36,7 @@ const Features = ({ title, data }: PropType) => {
                 <div className={`features-item__img ${fet.class}`}></div>
                 <div className="features-item__detail">
                   <h3 className="features-item__title">{fet.title}</h3>
-                  <p className="features-item__text">
+                  {/* <p className="features-item__text">
                     {Array.isArray(fet.text) ? (
                       <ul>
                         {fet.text.map((item, index) => (
@@ -46,7 +46,7 @@ const Features = ({ title, data }: PropType) => {
                     ) : (
                       <p>{fet.text}</p>
                     )}
-                  </p>
+                  </p> */}
                 </div>
               </li>
             ))}

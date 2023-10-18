@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import OpeningImg from "@/assets/images/opening-hours.png";
-import FootprintsImg from "@/assets/images/world-map.png";
+import FootprintsImg from "@/assets/images/pngwing.com.png";
 import BlogImg from "@/assets/images/blog.jpg";
 import { CalendarIcon } from "@/components/icons";
 

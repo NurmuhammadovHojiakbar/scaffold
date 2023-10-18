@@ -1,18 +1,17 @@
-import { Link } from "react-router-dom";
 import "./container.scss";
 
 type PropType = {
   title: string;
-  links: undefined;
+  // links: string;
 };
 
-const ContainerHeader = ({ title, links }: PropType) => {
+const ContainerHeader = ({ title }: PropType) => {
   return (
     <header className="container-header">
       <div className="container container-header__container">
         <h2 className="container-header__title">{title}</h2>
         <div className="container-header__links">
-          {links ? (
+          {/* {links ? (
             <ul className="container-header__list">
               {links?.map((link) => (
                 <li className="container-header__item" key={link.id}>
@@ -30,7 +29,7 @@ const ContainerHeader = ({ title, links }: PropType) => {
             </ul>
           ) : (
             <div></div>
-          )}
+          )} */}
         </div>
       </div>
     </header>

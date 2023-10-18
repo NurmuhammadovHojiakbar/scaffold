@@ -486,12 +486,27 @@
 
         &__hum {
             display: block;
+            background-color: #fff;
+
+            svg {
+                fill: black;
+                color: black;
+            }
         }
     }
 
+    // font-size: 40px;
+    // line-height: 48px;
     .mobile {
         &-wrapper.active {
             display: block;
+        }
+
+        &-nav {
+            &__contact-link {
+                background-color: #00235a;
+                border-radius: 12px;
+            }
         }
 
         &-nav.active {

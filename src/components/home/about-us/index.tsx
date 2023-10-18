@@ -1,8 +1,8 @@
 import { Experience } from "@/components/about";
-import HelmetImg from "@/assets/images/helmet.png";
-import SawMachineImg from "@/assets/images/cutting-machine.png";
-import ToolsImg from "@/assets/images/repair-tools.png";
-import DrillImg from "@/assets/images/driller.png";
+import HelmetImg from "@/assets/images/one-number.png";
+import SawMachineImg from "@/assets/images/two-number.png";
+import ToolsImg from "@/assets/images/three-number.png";
+import DrillImg from "@/assets/images/four-number.png";
 import { useState } from "react";
 
 const AboutUs = () => {

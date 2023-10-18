@@ -149,6 +149,11 @@ svg {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .visually-hidden {

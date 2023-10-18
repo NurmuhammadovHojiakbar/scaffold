@@ -47,8 +47,7 @@ const Counter = ({
 
   return (
     <section
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
+      // data-aos="fade-up"
       className="counter"
       style={{ backgroundColor: bgColor }}
     >
@@ -84,9 +83,9 @@ const Counter = ({
               >
                 {stat.title}
               </h2>
-              <p className="counter-item__text" style={{ color: detailsColor }}>
-                {stat.desc}
-              </p>
+              {/* <p className="counter-item__text" style={{ color: detailsColor }}>
+                {stat?.desc}
+              </p> */}
             </li>
           ))}
         </ul>

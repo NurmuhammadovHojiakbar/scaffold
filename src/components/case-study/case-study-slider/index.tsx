@@ -12,7 +12,7 @@ const CaseStudySlider = () => {
       <h2 className="projects-slider__title">Projects</h2>
       <div
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
         className="container container-sm projects-slider__container"
       >
         {/* <h3 className="title-sm projects-slider__container-title">

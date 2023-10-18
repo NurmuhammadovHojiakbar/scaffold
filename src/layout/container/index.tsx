@@ -7,10 +7,10 @@ type PropType = {
   title: string;
   children: React.ReactNode;
   headerTitle: string;
-  linksList: undefined;
+  // linksList: undefined;
 };
 
-const Container = ({ title, children, headerTitle, linksList }: PropType) => {
+const Container = ({ title, children, headerTitle }: PropType) => {
   const location = useLocation();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Container = ({ title, children, headerTitle, linksList }: PropType) => {
 
   return (
     <Page title={title}>
-      <ContainerHeader title={headerTitle} links={linksList} />
+      <ContainerHeader title={headerTitle} />
       <main>{children}</main>
     </Page>
   );
