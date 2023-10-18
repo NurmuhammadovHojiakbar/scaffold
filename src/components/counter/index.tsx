@@ -51,12 +51,12 @@ const Counter = ({
       className="counter"
       style={{ backgroundColor: bgColor }}
     >
-      <h2
+      {/* <h2
         className="counter-title"
         style={{ WebkitTextStrokeColor: titleColor }}
       >
         Counter
-      </h2>
+      </h2> */}
       <div className="container container-sm counter-container">
         {title && (
           <h3 className="title-sm counter-container__title">{title}</h3>

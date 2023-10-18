@@ -1,8 +1,9 @@
 import { Experience } from "@/components/about";
-import HelmetImg from "@/assets/images/one-number.png";
-import SawMachineImg from "@/assets/images/two-number.png";
-import ToolsImg from "@/assets/images/three-number.png";
-import DrillImg from "@/assets/images/four-number.png";
+import HelmetImg from "@/assets/images/roofing.png";
+import SawMachineImg from "@/assets/images/roof.png";
+import ToolsImg from "@/assets/images/signal.png";
+import DrillImg from "@/assets/images/scaffolding-card.png";
+import DrillImg2 from "@/assets/images/scaffolding.png";
 import { useState } from "react";
 
 const AboutUs = () => {
@@ -37,7 +38,7 @@ const AboutUs = () => {
     },
     {
       id: 4,
-      img: DrillImg,
+      img: DrillImg2,
       text: "Temporary Roofing",
       title:
         "Place your trust in the time-honored legacy of London scaffolding, distinguished by its unwavering commitment to impeccable work processes, stringent quality control, top-tier services and equipment, rigorous health and safety standards, comprehensive training, and cutting-edge technology.",

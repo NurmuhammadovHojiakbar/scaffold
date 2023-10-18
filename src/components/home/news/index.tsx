@@ -7,7 +7,7 @@ const News = () => {
 
   return (
     <section className="news">
-      <h2 className="news-title">News</h2>
+      {/* <h2 className="news-title">News</h2> */}
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"

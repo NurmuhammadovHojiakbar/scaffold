@@ -6,7 +6,7 @@ type PropType = {
   data: {
     id: number;
     title: string;
-    // text: string;
+    text: string;
     class: string;
   }[];
 };
@@ -14,7 +14,7 @@ type PropType = {
 const Features = ({ title, data }: PropType) => {
   return (
     <section className="features">
-      <h2 className="features-title">Features</h2>
+      {/* <h2 className="features-title">Features</h2> */}
       <div className="container container-sm features-container">
         <div className="features-wrapper">
           {/* <h3 className="title-sm features-wrapper__title">Core Features</h3> */}
@@ -42,11 +42,11 @@ const Features = ({ title, data }: PropType) => {
                         {fet.text.map((item, index) => (
                           <li key={index}>{item.title}</li>
                         ))}
-                      </ul>
-                    ) : (
-                      <p>{fet.text}</p>
-                    )}
-                  </p> */}
+                        </ul>
+                        ) : (
+                          )}
+                        </p> */}
+                  <p>{fet?.text}</p>
                 </div>
               </li>
             ))}
