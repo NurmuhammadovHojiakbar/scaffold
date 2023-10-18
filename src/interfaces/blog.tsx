@@ -42,6 +42,7 @@ export interface BlogInterface {
   category: BlogCategoryInterface;
   tag: BlogTagInterface[];
   comments: BlogCommentInterface[];
+  date: string;
 }
 
 export interface BlogListInterface {

@@ -1,7 +1,7 @@
 .features {
     position: relative;
     padding: 120px 0;
-    background: url("../../assets/images/feature-bg.jpg") no-repeat center;
+    background: url("../../assets/images/feature-bg.jpg") no-repeat right;
     background-size: cover;
 
     &-title {
@@ -36,7 +36,7 @@
         }
 
         &__heading.title-lg {
-            font-size: 40px;
+            font-size: 30px;
             line-height: 48px;
         }
     }
@@ -170,7 +170,7 @@
 
         &-wrapper {
             &__heading.title-lg {
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 48px;
             }
         }
@@ -195,8 +195,8 @@
             gap: 20px;
 
             &__img {
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
 
             &__title {

@@ -36,12 +36,12 @@ const Navigation = ({ socialList }: PropType) => {
     {
       id: 4,
       path: "/case-study",
-      name: "Case Study",
+      name: "OUR PROJECTS",
     },
     {
       id: 5,
       path: "/blog",
-      name: "Blog",
+      name: "NEWS",
     },
   ];
 

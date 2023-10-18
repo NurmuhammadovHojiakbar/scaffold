@@ -32,9 +32,9 @@ const AboutServices = () => {
   ];
   return (
     <section className="about-services">
-      <h2 className="about-services__title">Services</h2>
+      {/* <h2 className="about-services__title">Services</h2> */}
       <div className="container container-sm about-services__container">
-        <h3 className="title-sm about-services__container-title">Services</h3>
+        {/* <h3 className="title-sm about-services__container-title">Services</h3> */}
         <h2 className="title-lg about-services__container-heading">
           What we do
         </h2>

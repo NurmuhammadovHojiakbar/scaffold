@@ -4,6 +4,7 @@ import OpeningImg from "@/assets/images/opening-hours.png";
 import FootprintsImg from "@/assets/images/pngwing.com.png";
 import BlogImg from "@/assets/images/blog.jpg";
 import { CalendarIcon } from "@/components/icons";
+import { useGetBlogsQuery } from "@/store/api/blogs";
 
 const FooterTop = () => {
   const services = useMemo(
@@ -18,11 +19,11 @@ const FooterTop = () => {
       },
       {
         id: 3,
-        name: "SERVICE STUDY",
+        name: "OUR PROJECTS",
       },
       {
         id: 4,
-        name: "Blog",
+        name: "NEWS",
       },
       // {
       //   id: 5,
@@ -35,29 +36,31 @@ const FooterTop = () => {
     ],
     []
   );
-  const blog = useMemo(
-    () => [
-      {
-        id: 1,
-        image: BlogImg,
-        title: "WHAT TO DO IF PEOPLE HATE",
-        date: "AUGUST 26, 2020",
-      },
-      {
-        id: 2,
-        image: BlogImg,
-        title: "HOW TO CREATE CUSTOMER-CENTRIC LANDING PAGES",
-        date: "AUGUST 26, 2020",
-      },
-      {
-        id: 3,
-        image: BlogImg,
-        title: "BRINGING A BETTER DESIGN PROCESS TO",
-        date: "AUGUST 26, 2020",
-      },
-    ],
-    []
-  );
+  const { data: blogs } = useGetBlogsQuery({});
+
+  // const blog = useMemo(
+  //   () => [
+  //     {
+  //       id: 1,
+  //       image: BlogImg,
+  //       title: "WHAT TO DO IF PEOPLE HATE",
+  //       date: "AUGUST 26, 2020",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: BlogImg,
+  //       title: "HOW TO CREATE CUSTOMER-CENTRIC LANDING PAGES",
+  //       date: "AUGUST 26, 2020",
+  //     },
+  //     {
+  //       id: 3,
+  //       image: BlogImg,
+  //       title: "BRINGING A BETTER DESIGN PROCESS TO",
+  //       date: "AUGUST 26, 2020",
+  //     },
+  //   ],
+  //   []
+  // );
   return (
     <section className="footer-top">
       <div className="container footer-top__container">
@@ -114,12 +117,15 @@ const FooterTop = () => {
             NEWS & UPDATES
           </h2>
           <ul className="footer-top__blog-list">
-            {blog.map((b) => (
+            {blogs?.results?.slice(0, 3).map((b) => (
               <li className="footer-top__blog-item" key={b.id}>
                 <Link className="footer-top__blog-link" to="/blog">
                   <img
                     className="footer-top__blog-img"
                     src={BlogImg}
+                    style={{
+                      borderRadius: "12px",
+                    }}
                     alt="Blog"
                     width={60}
                     height={60}
@@ -128,7 +134,7 @@ const FooterTop = () => {
                   <div className="footer-top__blog-detail">
                     <time className="footer-top__blog-time">
                       <CalendarIcon className="footer-top__blog-icon" />
-                      {b.date}
+                      {b?.date}
                     </time>
                     <h3 className="footer-top__title footer-top__blog-detail-title">
                       {b.title}

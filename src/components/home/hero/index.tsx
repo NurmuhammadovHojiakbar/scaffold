@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section data-aos="fade-down" className="site-hero">
       <Swiper
-        navigation={true}
+        navigation={false}
         autoplay={{ delay: 8000, disableOnInteraction: false }}
         effect="fade"
         modules={[Navigation, Autoplay, EffectFade]}

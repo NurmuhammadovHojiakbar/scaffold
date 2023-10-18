@@ -95,7 +95,7 @@ const Home = () => {
           "WE HAVE A SPOTLESS TRACK-RECORD WITH CUSTOMERS AND CLIENTS ACROSS A RANGE OF INDUSTRY VERTICALS/SERVICES IN MULTIPLE LOCATIONS."
         }
       />
-      <h1 className="trustet-title title-lg container container-sm features-container">
+      <h1 className="trustet-title  title-lg container container-sm features-container">
         Trusted companies
       </h1>
       <Contract color="white" sliders={contractList} />

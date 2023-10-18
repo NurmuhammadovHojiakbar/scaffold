@@ -1,32 +1,33 @@
-.case-study{
+.case-study {
     padding: 120px 0 70px;
 
-    &__list{
+    &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 35px;
     }
 
-    &__item{
+    &__item {
         position: relative;
         flex-basis: calc(50% - 15px);
         padding-bottom: 125px;
 
-        &-wrapper{
+        &-wrapper {
             display: flex;
         }
 
-        &-img{
+        &-img {
             flex-grow: 1;
             object-fit: cover;
         }
 
-        &-details{
+        &-details {
             max-width: 355px;
             width: 100%;
             position: absolute;
             right: 0;
+            border-radius: 12px;
             bottom: 0;
             padding: 43px 50px;
             background-color: #fff;
@@ -34,7 +35,7 @@
             box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.06);
         }
 
-        &-type{
+        &-type {
             margin-top: 0;
             margin-bottom: 4px;
             text-transform: uppercase;
@@ -43,7 +44,7 @@
             line-height: 26px;
         }
 
-        &-title{
+        &-title {
             margin-top: 0;
             margin-bottom: 15px;
             font-size: 24px;
@@ -54,7 +55,7 @@
             color: var(--blue-color);
         }
 
-        &-desc{
+        &-desc {
             margin-top: 0;
             margin-bottom: 11px;
             font-size: 14px;
@@ -62,38 +63,38 @@
             color: var(--blue-color);
         }
 
-        &-info{
+        &-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 15px;
         }
 
-        &-client{
+        &-client {
             display: flex;
             align-items: center;
             gap: 5px;
             margin: 0;
 
-            span{
+            span {
                 color: var(--blue-color);
                 font-weight: bold;
             }
         }
-        
-        &-time{
+
+        &-time {
             display: flex;
             align-items: center;
             gap: 5px;
             margin: 0;
 
-            span{
+            span {
                 color: var(--blue-color);
                 font-weight: bold;
             }
         }
 
-        &-icon{
+        &-icon {
             width: 14px;
             color: var(--orange-color);
             stroke-width: 2;
@@ -101,11 +102,11 @@
     }
 }
 
-.projects-slider{
+.projects-slider {
     position: relative;
     padding: 90px 0;
 
-    &__title{
+    &__title {
         position: absolute;
         top: 0;
         left: 50%;
@@ -119,15 +120,15 @@
         line-height: 1;
     }
 
-    &__container{
+    &__container {
         position: relative;
         z-index: 1;
     }
 }
 
 @media only screen and (max-width: 1210px) {
-    .projects-slider{
-        &__title{
+    .projects-slider {
+        &__title {
             font-size: 190px;
             transform: translate(-50%, -19px);
         }
@@ -135,10 +136,10 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .projects-slider{
-        .case-study{
-            &__item{
-                &-details{
+    .projects-slider {
+        .case-study {
+            &__item {
+                &-details {
                     max-width: unset;
                     width: auto;
                     left: 20px;
@@ -150,19 +151,20 @@
 }
 
 @media only screen and (max-width: 990px) {
-    .case-study{
-        &__list{
+    .case-study {
+        &__list {
             flex-direction: column;
             align-items: center;
         }
-        &__item{
+
+        &__item {
             max-width: 570px;
             width: 100%;
         }
     }
 
-    .projects-slider{
-        &__title{
+    .projects-slider {
+        &__title {
             font-size: 150px;
             transform: translate(-50%, -15px);
         }
@@ -170,15 +172,15 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .projects-slider{
-        .case-study{
-            &__item{
-    
-                &-img{
+    .projects-slider {
+        .case-study {
+            &__item {
+
+                &-img {
                     height: 350px;
                 }
-    
-                &-details{
+
+                &-details {
                     padding: 23px 30px;
                     left: 10px;
                     right: 10px;
@@ -189,25 +191,26 @@
 }
 
 @media only screen and (max-width: 770px) {
-    .projects-slider{
-        &__title{
+    .projects-slider {
+        &__title {
             font-size: 100px;
             transform: translate(-50%, -10px);
         }
-        .swiper-slide{
+
+        .swiper-slide {
             display: flex;
             justify-content: center;
         }
 
-        .case-study{
-            &__item{
+        .case-study {
+            &__item {
                 flex-grow: 1;
             }
         }
 
-        &__container{
-            &-heading.title-lg{
-                font-size: 40px;
+        &__container {
+            &-heading.title-lg {
+                font-size: 30px;
                 line-height: 48px;
             }
         }
@@ -216,12 +219,13 @@
 
 
 @media only screen and (max-width: 650px) {
-    .case-study{
-        &__item{
-            &-details{
+    .case-study {
+        &__item {
+            &-details {
                 max-width: unset;
                 width: auto;
                 left: 20px;
+
                 right: 20px;
             }
         }
@@ -229,8 +233,8 @@
 }
 
 @media only screen and (max-width: 550px) {
-    .projects-slider{
-        &__title{
+    .projects-slider {
+        &__title {
             font-size: 70px;
             transform: translate(-50%, -7px);
         }
@@ -238,14 +242,14 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .case-study{
-        &__item{
+    .case-study {
+        &__item {
 
-            &-img{
+            &-img {
                 height: 350px;
             }
 
-            &-details{
+            &-details {
                 padding: 23px 30px;
                 left: 10px;
                 right: 10px;
@@ -253,10 +257,10 @@
         }
     }
 
-    .projects-slider{
-        &__container{
-            &-heading.title-lg{
-                font-size: 28px;
+    .projects-slider {
+        &__container {
+            &-heading.title-lg {
+                // font-size: 28px;
                 line-height: 40px;
             }
         }

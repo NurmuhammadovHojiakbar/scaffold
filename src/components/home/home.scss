@@ -63,6 +63,16 @@
             left: 40px;
             right: 40px;
         }
+
+        &::after {
+            content: "";
+            height: 10px;
+            background-color: var(--orange-color);
+            position: absolute;
+            bottom: -80px;
+            left: 40px;
+            right: 40px;
+        }
     }
 
     &__item {
@@ -168,6 +178,7 @@
         &__category {
             position: absolute;
             top: 30px;
+            border-radius: 14px;
             left: 30px;
             padding: 8px 20px;
             background-color: var(--orange-color);
@@ -261,8 +272,8 @@
     &-title {
         margin-top: 0;
         font-weight: bold;
-        font-size: 80px;
-        line-height: 80px;
+        font-size: 70px;
+        line-height: 70px;
         margin-bottom: 8px;
 
         @media only screen and (max-width: 770px) {
@@ -283,8 +294,8 @@
     &-about {
         font-size: 18px;
         line-height: 28px;
-        padding-left: 22px;
-        border-left: 4px solid var(--orange-color);
+        padding-left: 5px;
+        // border-left: 4px solid var(--orange-color);
         margin-top: 0;
         margin-bottom: 25px;
         color: var(--blue-color);
@@ -362,7 +373,12 @@
     }
 }
 
+
+
 @media only screen and (max-width: 950px) {
+
+
+
     .about-us {
         &__header {
             flex-direction: column;
@@ -412,7 +428,7 @@
 
         &__header {
             &-heading.title-lg {
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 48px;
             }
         }
@@ -434,7 +450,7 @@
     .news {
         &-container {
             &__heading.title-lg {
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 48px;
             }
         }
@@ -443,5 +459,5 @@
 
 .trustet-title {
     padding-top: 70px;
-    text-align: left;
+    text-align: center;
 }

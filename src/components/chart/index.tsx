@@ -13,6 +13,7 @@ const Chart = ({ color, percent, trackColor, textColor, text }: PropType) => {
   return (
     <div className="chart">
       <CircularProgressBar
+        duration={8000}
         color={color}
         trackColor={trackColor}
         size={"11px"}

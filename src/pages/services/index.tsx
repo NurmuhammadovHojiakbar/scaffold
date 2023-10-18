@@ -162,7 +162,7 @@ const Services = () => {
                     className="service-cards-show-more-button"
                     onClick={() => handleShowMore(el.id)}
                   >
-                    ти м{expandedItem === el.id ? " " : "..."}
+                    {expandedItem === el.id ? " " : "..."}
                   </button>
                 )}
               </p>

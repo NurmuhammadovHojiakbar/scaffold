@@ -1,6 +1,6 @@
 import { Experience } from "@/components/about";
 import HelmetImg from "@/assets/images/roofing.png";
-import SawMachineImg from "@/assets/images/roof.png";
+import SawMachineImg from "@/assets/images/chimney.png";
 import ToolsImg from "@/assets/images/signal.png";
 import DrillImg from "@/assets/images/scaffolding-card.png";
 import DrillImg2 from "@/assets/images/scaffolding.png";

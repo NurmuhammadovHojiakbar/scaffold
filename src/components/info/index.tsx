@@ -13,7 +13,7 @@ const Info = ({ itemClass, wrapperClass }: PropTypes) => {
   return (
     <section
       data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
+      // data-aos-anchor-placement="center-bottom"
       className={`info ${wrapperClass ? wrapperClass : ""}`}
     >
       <div className="info-img"></div>

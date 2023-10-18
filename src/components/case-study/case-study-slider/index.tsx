@@ -18,7 +18,12 @@ const CaseStudySlider = () => {
         {/* <h3 className="title-sm projects-slider__container-title">
           Case Study
         </h3> */}
-        <h2 className="title-lg projects-slider__container-heading">
+        <h2
+          style={{
+            textAlign: "center",
+          }}
+          className="title-lg projects-slider__container-heading"
+        >
           Browse Our Recent Proudly <br /> Completed Projects
         </h2>
 

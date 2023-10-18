@@ -52,7 +52,7 @@ const ContactInfo = () => {
         </div>
         <iframe
           className="contact-info__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14523.791469078047!2d17.761031903086845!3d62.93334670871094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4664b8d5058eb411%3A0x7355888518fa70a3!2s872%2031%20Bergom%2C%20Sweden!5e0!3m2!1sen!2sus!4v1694960133243!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3233515184966!2d-0.08851510952476715!3d51.52562883671378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca5605ad9fd%3A0x455c57df1d76f556!2zODYtOTAgUGF1bCBTdCwgTG9uZG9uIEVDMkEgNE5FLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2s!4v1697647476899!5m2!1sru!2s"
           loading="lazy"
         ></iframe>
       </div>

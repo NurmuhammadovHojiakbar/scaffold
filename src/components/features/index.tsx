@@ -52,7 +52,7 @@ const Features = ({ title, data }: PropType) => {
             ))}
           </ul>
 
-          <Link className="btn" to="/about">
+          <Link className="btn" to="/case-study">
             Our Cases
           </Link>
         </div>
