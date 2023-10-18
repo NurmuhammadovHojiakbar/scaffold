@@ -19,7 +19,6 @@ const Counter = ({
   color,
   detailsColor,
   textColor,
-  titleColor,
   trackColor,
 }: PropType) => {
   const stats = [
