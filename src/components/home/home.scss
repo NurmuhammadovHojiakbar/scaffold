@@ -93,7 +93,7 @@
         &-heading {
             position: absolute;
             top: 0;
-            left: 0;
+            left: -38px;
             font-size: 150px;
             line-height: 1;
             font-weight: bold;
@@ -261,7 +261,7 @@
 .hero {
     position: relative;
     padding: 200px 0;
-    background: url("../../assets/images/hero-bg-1.jpg") no-repeat center;
+    // background: url("../../assets/images/hero-bg-1.jpg") no-repeat center;
     background-size: cover;
 
     &.blue {

@@ -6,11 +6,23 @@ type PropType = {
   heading: string;
   about: string | React.ReactNode;
   class: string;
+  image: string;
 };
 
-const HeroItem = ({ title, about, class: heroClass, heading }: PropType) => {
+const HeroItem = ({
+  title,
+  about,
+  class: heroClass,
+  heading,
+  image,
+}: PropType) => {
   return (
-    <div className={`hero ${heroClass}`}>
+    <div
+      style={{
+        backgroundImage: `url(${image})`,
+      }}
+      className={`hero ${heroClass}`}
+    >
       <div className="container container-sm hero-container">
         <h2 className="hero-title empty">{title}</h2>
         <h2 className="hero-title full">{heading}</h2>
