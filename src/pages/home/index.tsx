@@ -14,6 +14,7 @@ import Counter from "@/components/counter";
 import { AboutUs, Hero, News } from "@/components/home";
 import { CaseStudySlider } from "@/components/case-study";
 import { ContactTouch } from "@/components/contact";
+import Reports from "@/components/reports";
 
 const Home = () => {
   const contractList = useMemo(
@@ -98,6 +99,7 @@ const Home = () => {
       <h1 className="trustet-title  title-lg container container-sm features-container">
         Trusted companies
       </h1>
+
       <Contract color="white" sliders={contractList} />
       <CaseStudySlider />
       <Info />
@@ -111,6 +113,10 @@ const Home = () => {
         detailsColor="#00235a"
         titleColor="#f4f4f4"
       />
+      <h1 className="trustet-title  title-lg container container-sm features-container">
+        Reports
+      </h1>
+      <Reports />
       <News />
       <ContactTouch />
     </Page>

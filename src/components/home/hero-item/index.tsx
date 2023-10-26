@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import parse from "html-react-parser";
 
 type PropType = {
   title: string;
@@ -7,6 +8,7 @@ type PropType = {
   about: string | React.ReactNode;
   class: string;
   image: string;
+  desc: string;
 };
 
 const HeroItem = ({
@@ -15,6 +17,7 @@ const HeroItem = ({
   class: heroClass,
   heading,
   image,
+  desc,
 }: PropType) => {
   return (
     <div
@@ -26,6 +29,7 @@ const HeroItem = ({
       <div className="container container-sm hero-container">
         <h2 className="hero-title empty">{title}</h2>
         <h2 className="hero-title full">{heading}</h2>
+        <h2 className="hero-title empty">{parse(`${desc}`)}</h2>
         <p className="hero-about">{about}</p>
         <div className="hero-buttons">
           <Link className="btn hero-button" to={"/about"}>

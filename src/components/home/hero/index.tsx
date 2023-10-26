@@ -52,6 +52,7 @@ const Hero = () => {
     class: string;
     id: number;
     image: string;
+    desc: string;
   };
   return (
     <section data-aos="fade-down" className="site-hero">

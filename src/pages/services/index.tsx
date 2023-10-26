@@ -143,7 +143,7 @@ const Services = () => {
         >
           {needs.map((el) => (
             <li className="about-us__item" key={el.id}>
-              <h2 className="about-us__item-heading">0{el.id}</h2>
+              <h2 className="about-us__item-heading">0{el.id + 1}</h2>
               <img
                 className="about-us__item-img"
                 src={el.img}

@@ -93,7 +93,7 @@
         &-heading {
             position: absolute;
             top: 0;
-            left: -38px;
+            left: -58px;
             font-size: 150px;
             line-height: 1;
             font-weight: bold;
@@ -283,7 +283,7 @@
     }
 
     &-title.empty {
-        color: transparent;
+        color: white;
         -webkit-text-stroke: 1px var(--blue-color);
     }
 
