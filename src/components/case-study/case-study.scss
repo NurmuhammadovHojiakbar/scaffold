@@ -106,6 +106,21 @@
     position: relative;
     padding: 90px 0;
 
+    .desctop {
+
+        @media only screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    .mobile {
+        display: none;
+
+        @media only screen and (max-width: 425px) {
+            display: block;
+        }
+    }
+
     &__title {
         position: absolute;
         top: 0;

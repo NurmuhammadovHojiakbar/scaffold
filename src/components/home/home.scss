@@ -287,6 +287,16 @@
         -webkit-text-stroke: 1px var(--blue-color);
     }
 
+    &-title.desc {
+        color: white;
+        font-size: 36px;
+        -webkit-text-stroke: 1px var(--blue-color);
+
+        @media only screen and (max-width: 770px) {
+            font-size: 24px;
+        }
+    }
+
     &-title.full {
         color: var(--blue-color);
     }

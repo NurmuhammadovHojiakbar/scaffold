@@ -114,7 +114,7 @@ const Home = () => {
         titleColor="#f4f4f4"
       />
       <h1 className="trustet-title  title-lg container container-sm features-container">
-        Reports
+        Testimonials
       </h1>
       <Reports />
       <News />

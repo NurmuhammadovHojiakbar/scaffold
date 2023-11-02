@@ -1,4 +1,30 @@
 const Comment = () => {
+  // function SearchField(e) {
+  //   // e.preventDefault();
+  //   // setCategoryId(e);
+  //   setLoading(false);
+  //   axios
+  //     .post(
+  //       "https://backend.armadamotor.com/Api/Products/Search",
+  //       {
+  //         pageSize: "10",
+  //         pageIndex: "1",
+  //         categoryIds: [e],
+  //       },
+  //       config
+  //     )
+  //     .then(function (response) {
+  //       console.log(response);
+  //       setLoading(true);
+  //       setData(response.data);
+
+  //       // GetProducts();
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //       setLoading(true);
+  //     });
+  // }
   return (
     <div className="blog-comment">
       <h2 className="blog-comment__title">Leave a Comment</h2>

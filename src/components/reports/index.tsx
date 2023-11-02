@@ -4,10 +4,11 @@ import "./main.scss";
 const Reports = () => {
   const [data, setData] = useState([]);
   type PropType = {
-    text: string;
+    content: string;
     name: string;
     email: string;
     created: string;
+    image: string;
   };
   useEffect(() => {
     axios
@@ -27,11 +28,14 @@ const Reports = () => {
         {data?.map((i: PropType) => (
           <div className="report-card">
             <div className="card-title">
-              <h2>{i?.text}</h2>
+              <h2>{i?.content}</h2>
             </div>
             <div className="card-details">
               <div className="info">
-                <h3>{i?.name}</h3>
+                <div>
+                  <h3>{i?.name}</h3>
+                  <img src={i.image} alt="" />
+                </div>
                 <span>{i.created.slice(0, 10)}</span>
               </div>
               <h4>{i?.email}</h4>

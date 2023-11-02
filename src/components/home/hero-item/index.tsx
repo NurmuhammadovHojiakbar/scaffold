@@ -29,7 +29,7 @@ const HeroItem = ({
       <div className="container container-sm hero-container">
         <h2 className="hero-title empty">{title}</h2>
         <h2 className="hero-title full">{heading}</h2>
-        <h2 className="hero-title empty">{parse(`${desc}`)}</h2>
+        <h2 className="hero-title desc">{parse(`${desc}`)}</h2>
         <p className="hero-about">{about}</p>
         <div className="hero-buttons">
           <Link className="btn hero-button" to={"/about"}>
